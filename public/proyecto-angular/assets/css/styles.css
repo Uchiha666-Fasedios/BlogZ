@@ -1,0 +1,356 @@
+/* Importar fuentes custom*/
+
+
+/*@font-face para importar fuentes*/
+
+@font-face {
+    /*nombre q le pongo para imbocar*/
+    font-family: "yanone";
+    /*llamo la ubicacion de la fuente*/
+    src: url("fonts/yanone.ttf");
+}
+
+@font-face {
+    font-family: "finger";
+    src: url("fonts/finger.ttf");
+}
+
+
+/*Generales*/
+
+
+/*por defecto lo dejo tod sin margen ni padding q son espacios de todos lados*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "yanone", Arial, Helvetica;
+    font-size: 20px;
+    /*coloco una imagen para q ocupe todo el body*/
+    background: url("../img/pattern.png");
+    /*para q el fondo la foto se qede fijo cuando hago scroll*/
+    background-attachment: fixed;
+}
+
+
+/*para limpiar los flotados*/
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/*Barra de navegacion / cabecera*/
+
+header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: rgba(53, 103, 164, 0.8);
+    /*para q se qede el header siempre arriba aunqe haga scroll*/
+    position: fixed;
+    /*q sea en mayusculas*/
+    text-transform: uppercase;
+}
+
+header ul {
+    display: block;
+    width: 40%;
+    /*altura heredada que esta heredado del padre o sea de header*/
+    height: inherit;
+    /*los pone en el medio*/
+    margin: 0px auto;
+    margin-top: -3px;
+}
+
+header ul li {
+    /*para q se ponga cada elemento uno al lado del otro*/
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 88px;
+}
+
+header a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    /*para q haga una transicion en el movimiento cuando paso con el mause*/
+    transition: all 300ms;
+}
+
+header a:hover,
+.actived {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*Logotipo*/
+
+#logo {
+    /*le pongo la fuente importada*/
+    font-family: "finger";
+    /*tamaño de fuente*/
+    font-size: 30px;
+}
+
+#logo a {
+    /*hace una transicion cuando paso por el logo como mas lenta*/
+    transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover {
+    /*el background va ser tranparente para q no se rellene de negro con el hover q coloqe en el header a:hover*/
+    background: transparent;
+    /*el color de la letra*/
+    color: black;
+    /*escala el tamaño*/
+    transform: scale(1.50, 1.50);
+}
+
+
+/*Contenedor principal*/
+
+#content {
+    min-height: 600px;
+    height: auto;
+    width: 75%;
+    margin: 0px auto;
+    /*como una sombra*/
+    box-shadow: 0px 0px 40px black;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    background: rgba(255, 255, 255, 0.7);
+    /*para q el contenido baje porqe el paddin le da un espacio*/
+    padding-top: 120px;
+}
+
+
+/*Pie de pagina*/
+
+footer {
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*Sobre mi*/
+
+#title {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#title h1 {
+    font-family: "finger";
+    font-size: 60px;
+    /*para q haga la linea*/
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#title h2 {
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+article.about {
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2 {
+    /*para q haga la linea*/
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+
+/*Sección con formulario*/
+
+.container {
+    /*espacios*/
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.container .image {
+    float: left;
+    width: 47%;
+}
+
+.container .image img {
+    width: 100%;
+}
+
+.container .data {
+    float: left;
+    width: 48%;
+    margin-left: 30px;
+}
+
+.container h2 {
+    display: block;
+    /*una linea abajo*/
+    border-bottom: 1px solid #ccc;
+    /*espacio antes de la line para abajo*/
+    padding-bottom: 10px;
+    /*espacio de la line para abajo*/
+    margin-bottom: 15px;
+}
+
+form {
+    width: 80%;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea {
+    width: 40%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"],
+.button-edit,
+.button-delete {
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background: rgba(53, 103, 164, 1);
+    border: 1px solid rgba(13, 67, 133, 1);
+    cursor: pointer;
+}
+
+.button-edit,
+.button-delete {
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.button-edit {
+    background: orange;
+    border: none;
+}
+
+.button-delete {
+    background: red;
+    border: none;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background: rgba(53, 103, 164, 0.8);
+    border: 1px solid rgba(13, 67, 133, 1);
+}
+
+
+/*mientras el boton sea disable */
+
+form input[disabled] {
+    /*me pone una opacidad casi tapando la visivilidad del boton*/
+    opacity: 0.4;
+    /*cuando paso con el mouse me muestra un dibujito de proibido*/
+    cursor: not-allowed;
+}
+
+.form_error {
+    font-size: 13px;
+    padding: 3px;
+    background: red;
+    color: white;
+    margin-left: 5px;
+}
+
+
+/*maqeto el mensaje de crear el proyecto o si da un fallido*/
+
+.message {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.success {
+    background: green;
+    color: white;
+}
+
+.message a {
+    color: white;
+}
+
+.failed {
+    background: red;
+    color: white;
+}
+
+
+/*Pagina de proyectos*/
+
+.project {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 28%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.project .image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
+}
+
+.confirm {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
