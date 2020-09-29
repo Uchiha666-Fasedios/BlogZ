@@ -1,0 +1,18 @@
+# LIMPIAR LA URL
+
+<IfModule mod_rewrite.c>
+# Activar rewrite
+RewriteEngine on
+ErrorDocument 404 http://localhost/proyecto-mvc/error/index
+
+# no voy a poder escribir un fichero cualquiera solo url
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+# q me escriba todo a este formato o sea q me escriba asi cualquier url q llege de este tipo index.php?controller=$1&action=$2
+# ponme aqui (.*) lo q alla en el 1 y aqui (.*) lo del 2
+
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>

@@ -1,0 +1,1 @@
+$('#loginModal').modal('show'); //con jquery llamo de nuevo al archivo del login

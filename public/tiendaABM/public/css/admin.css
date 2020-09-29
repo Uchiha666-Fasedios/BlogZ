@@ -1,0 +1,99 @@
+a:hover{
+    cursor: pointer !important;
+}
+
+.item-primary{
+    color: #fff !important;
+}
+
+.item-primary:hover{
+    color: #e8a207 !important;
+}
+
+.menu>li:hover>a, .menu>li.show>a, .menu>li.active>a {
+    border-color: #e8a207 !important;
+  
+}
+
+.msm_cancelacion {
+    background: #fcfcfc;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 15px;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+#badge-cancel{
+    cursor: pointer;
+    
+}
+ 
+#badge-cancel:hover ~ .msm_cancelacion{
+    display: block;
+    transition: .5s;
+}
+
+/*ENTREGADO**/
+
+.msm_entregado{
+    background: #fcfcfc;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 15px;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+#badge-entregado{
+    cursor: pointer;
+    
+}
+ 
+#badge-entregado:hover ~ .msm_entregado{
+    display: block;
+    transition: .5s;
+}
+
+/*PROCESADO*/
+
+.msm_procesado{
+    background: #fcfcfc;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 15px;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+#badge-procesado{
+    cursor: pointer;
+    
+}
+ 
+#badge-procesado:hover ~ .msm_procesado{
+    display: block;
+    transition: .5s;
+}
+
+.btn-marca{
+    background: none !important;
+    border: none !important;
+    color: #6c6a6a !important;
+    cursor: pointer !important;
+}
