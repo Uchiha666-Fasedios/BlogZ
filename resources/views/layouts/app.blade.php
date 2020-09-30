@@ -80,9 +80,9 @@
                 <div class="mbr-table-cell">
 
                     <div class="navbar-brand">
-                        <a href="https://mobirise.com" class="navbar-logo"><img src="{{ asset('assets/images/img-laravel-128x128.png') }}" alt="Mobirise"></a>
+                        <a href="{{route('welcome')}}" class="navbar-logo"><img src="{{ asset('assets/images/img-laravel-128x128.png') }}" alt="Mobirise"></a>
                         {{--  <a class="navbar-caption text-white" href="https://mobirise.com">BLOGLARAVEL</a> --}}
-                        <a class="navbar-caption text-white" href="https://mobirise.com">{{ config('app.name') }}</a>{{-- variable q nos viene de config/app y alli se comunica con el archivo .env --}}
+                        <a class="navbar-caption text-white" href="{{route('welcome')}}">{{ config('app.name') }}</a>{{-- variable q nos viene de config/app y alli se comunica con el archivo .env --}}
                     </div>
 
                 </div>
@@ -244,11 +244,21 @@
 <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer2-5" data-rv-view="33" style="background-color: #000000; padding-top: 1.75rem; padding-bottom: 1.75rem;">
 
     <div class="container">
-    <p class="text-xs-center lead">Desarrollado por <a href="">Adrian Lisciotti (©)</a> 2020.</p>
+        <p class="text-xs-center lead">Desarrollado por <a href="">Adrian Lisciotti (©)</a> 2020.</p>
     </div>
 </footer>
 
 <script src="{{ asset('assets/web/assets/jquery/jquery.min.js') }}"></script>
+
+{{--nuevo (para la ventana3 de jquery)--}}
+<link rel="stylesheet" href="{{ asset('jss/jquery-ui/jquery-ui.min.css') }}" /><!--estylos css de ui va antes de los metodos-->
+<link rel="stylesheet" href="{{ asset('jss/jquery-ui/jquery-ui.structure.min.css') }}" /><!--estylos css de ui va antes de los metodos-->
+<link rel="stylesheet" href="{{ asset('jss/jquery-ui/jquery-ui.theme.min.css') }}" /><!--estylos css de ui va antes de los metodos-->
+<script type="text/javascript" src="{{ asset('jss/jquery-ui/jquery-ui.min.js') }}"></script><!--cargo los metodos de JQUERY UI-->
+{{--fin nuevo--}}
+
+
+
   <script src="{{ asset('assets/tether/tether.min.js') }}"></script>
   <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
   <script src="{{ asset('assets/viewport-checker/jquery.viewportchecker.js') }}"></script>
@@ -267,9 +277,15 @@
 
 
 
+
   {{-- mio --}}
   <script src="{{ asset('js/app.js') }}"></script>
  {{-- mio --}}
+
+
+ 
+
+
 
  @yield('comprobar-alias-js')  {{--esto solo lo utiliza la vista del registro .lo incluimos aqui porqe esto necesita del script q esta arriba --}}
  @yield('include-login-modal') {{-- estoy invocando a la section de welcome.blade.php --}}
