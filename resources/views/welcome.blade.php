@@ -53,7 +53,7 @@
                             <div class="jsNewsCard news__card" modal-id="#{{ $articulo->id }}">
                                 <div class="news__image">
 
-                                    <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/app/public/imagenesArticulos/'.$articulo->imagenDestacada()) }}">
+                                    <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">
                                 </div>
                                 <div class="news__inner">
                                     <h5 class="mbr-section-title display-6">{{ $articulo->titulo }}</h5>
@@ -79,7 +79,7 @@
                                 @if($articulo->images->first())
                                     <div class="news__image">
                                         @foreach($articulo->images as $imagen)
-                                            <img class="news__img" alt="" src="{{  url('http://www.adrianweb.live/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}">
+                                            <img class="news__img" alt="" src="{{  url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
                                         @endforeach
                                     </div>
                                 @endif
@@ -120,7 +120,7 @@
 
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 {{-- <div class="card-img iconbox"><a href="https://mobirise.com" class="cm-icon cm-icon-cloud mbr-iconfont mbr-iconfont-features16" style="color: rgb(252, 122, 96); text-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 20px, rgba(0, 0, 0, 0.0980392) -10px 10px 7px;"></a></div> --}}
-                                <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal1"><img src="{{  url('http://www.adrianweb.live/storage/img/php.jpg') }}" alt="php"></a></div> 
+                                <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal1"><img src="{{  url('http://www.adrianweb.live/storage/php.jpg') }}" alt="php"></a></div> 
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
@@ -138,7 +138,7 @@
 
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                {{-- <div class="card-img iconbox"><a href="https://mobirise.com" class="cm-icon cm-icon-note mbr-iconfont mbr-iconfont-features16" style="color: rgb(252, 122, 96); text-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 20px, rgba(0, 0, 0, 0.0980392) -10px 10px 7px;"></a></div> --}}
-                               <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal2"><img src="{{  url('http://www.adrianweb.live/storage/img/mysql.jpg') }}" alt="php"></a></div>
+                               <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal2"><img src="{{  url('http://www.adrianweb.live/storage/mysql.jpg') }}" alt="php"></a></div>
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
@@ -162,7 +162,7 @@
                         <div class="card cart-block">
 
                             <div class="col-xs-6 padding-left-0 padding-right-0">
-                            <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal3"><img src="{{  url('http://www.adrianweb.live/storage/img/jquery.jpg') }}" alt="php"></a></div>
+                            <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal3"><img src="{{  url('http://www.adrianweb.live/storage/jquery.jpg') }}" alt="php"></a></div>
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
@@ -179,7 +179,7 @@
                         <div class="card cart-block">
 
                             <div class="col-xs-6 padding-left-0 padding-right-0">
-                            <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal4"><img src="{{  url('http://www.adrianweb.live/storage/img/css2.jpg') }}" alt="php"></a></div>
+                            <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal4"><img src="{{  url('http://www.adrianweb.live/storage/css2.jpg') }}" alt="php"></a></div>
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
