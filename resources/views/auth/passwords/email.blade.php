@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+
+@include('includes.login-modal')
 @section('content')
 <div class="container">
-<div class="row justify-content-center" style="margin-top: 100px; margin-bottom: 150px">
+    <div class="row justify-content-center" style="margin-top: 100px; margin-bottom: 150px">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" >
                 <div class="card-header" style="margin-top: 50px; margin-bottom: 30px">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
@@ -45,3 +47,12 @@
     </div>
 </div>
 @endsection
+
+
+
+
+@if($errors->any())
+  @section('include-login-modal')
+  <script src="{{ asset('js/login-modal.js') }}"></script>
+  @endsection
+@endif
