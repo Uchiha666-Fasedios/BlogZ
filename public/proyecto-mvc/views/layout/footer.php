@@ -2,7 +2,7 @@
 </div>
 <!--PIE DE PAGINA-->
 <footer id="footer">
-  <p>Desarrollado por Victor Robles WEB &copy <?=date('Y')?></p>
+  <p>Desarrollado por Adrian Lisciotti WEB &copy <?=date('Y')?></p>
 </footer>
 </div>
   </body>

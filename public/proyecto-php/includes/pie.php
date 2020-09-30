@@ -4,7 +4,7 @@
 
 		<!-- PIE DE PÁGINA -->
 		<footer id="pie">
-			<p>Desarrollado por Víctor Robles &copy; 2018</p>
+			<p>Desarrollado por Adrian Lisciotti &copy; 2020</p>
 		</footer>
 		
 	</body>
