@@ -291,11 +291,7 @@ var rojo =	$("#rojo").css("background","red") //$("#rojo") selecciono el id  .cs
 			}*/
 			
 
-			input{
-				padding: 10px;
-				width: 300px;
-				font-size: 20px;
-			}
+			
 
 			#datos2{
 				border: 4px dashed black;
