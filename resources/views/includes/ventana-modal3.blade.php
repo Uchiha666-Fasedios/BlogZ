@@ -108,7 +108,7 @@
   
   
 	  // Selectores de etiqueta
-	  var parrafos = $('p').css("cursor", "pointer");//le ponemos este estylo q cuando pasemos por ensima sea una manito
+	  var parrafos = $('#rojo, #amarillo ,#verde, .zebra').css("cursor", "pointer");//le ponemos este estylo q cuando pasemos por ensima sea una manito
   
 	  parrafos.click(function(){
 		  var that = $(this);//$(this) este this se refiere a el elemento en donde se hizo click en este caso es elemento p
