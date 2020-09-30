@@ -1,4 +1,5 @@
 {{-- PAGINA PRINCIPAL Q SE INVOCA POR LA RUTA EN WEB.PHP  --}}
+
 @extends('layouts.app')<!--q me traiga de la carpeta layouts el app.blade.php-->
 
 
@@ -12,24 +13,24 @@
             <ul>
                 <li>
 
-                    <img src="assets/images/slide3-1600x900.jpg" alt="title 1" title="title 1"> text 1
+                    <img src="assets/images/matrix1.jpg" alt="title 1" title="title 1"> text 1
                 </li><li>
 
-                    <img src="assets/images/slide2-1600x900.jpg" alt="title 2" title="title 2"> text 2
+                    <img src="assets/images/matrix2.jpg" alt="title 2" title="title 2"> text 2
                 </li><li>
 
-                    <img src="assets/images/slide1-1600x900.jpg" alt="title 3" title="title 3"> text 3
+                    <img src="assets/images/matrix3.jpg" alt="title 3" title="title 3"> text 3
                 </li>
             </ul>
         </div>
         <div class="ws_bullets">
             <div>
                 <a href="#" title="">
-                    <span><img alt="slide1" src="assets/images/matrix1.jpg"></span>
+                    <span><img alt="slide1" src="assets/images/tooltip3.jpg"></span>
                 </a><a href="#" title="">
-                    <span><img alt="slide1" src="assets/images/matrix2.jpg"></span>
+                    <span><img alt="slide1" src="assets/images/tooltip2.jpg"></span>
                 </a><a href="#" title="">
-                    <span><img alt="slide1" src="assets/images/matrix3.jpg"></span>
+                    <span><img alt="slide1" src="assets/images/tooltip1.jpg"></span>
                 </a>
             </div>
         </div>
@@ -42,7 +43,7 @@
 
 
 
-<section class="mbr-section mbr-section-hero news" id="news1-7" data-rv-view="14" style="background-color: rgb(255, 255, 255); padding-top: 80px; padding-bottom: 80px;">
+<section class="mbr-section mbr-section-hero news" id="news1-7" data-rv-view="14" style="background-color: rgb(255, 255, 255); padding-top: 150px; padding-bottom: 150px;">
     @foreach($temasDestacados as $temaDestacado){{-- esta viene de app/http/controllers/welcomeController.php --}}
         <div class="container-fluid">
             <div class="row">
@@ -122,7 +123,7 @@
                                 <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal1"><img src="{{  url('http://www.adrianweb.live/storage/img/php.jpg') }}" alt="php"></a></div> 
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
-                            <div class="text-xs-left">
+                                <div class="text-xs-left">
                                     <h5 class="mbr-section-subtitle lead">Php se utiliza para el backend mas del 70% de la web esta hecho con el </h5>
                                     <p class="mbr-section-text lead"> El lenguaje PHP se encuentra instalado en más de 20 millones de sitios web y en un millón de servidores. Pudes verlo de un pantallazo.</p>
                                 </div>
@@ -141,7 +142,7 @@
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
-                                <h5 class="mbr-section-subtitle lead">Mysql te dejo la mayoria y las mas importantes consultas que tiene</h5>
+                                    <h5 class="mbr-section-subtitle lead">Mysql te dejo la mayoria y las mas importantes consultas que tiene</h5>
                                     <p class="mbr-section-text lead">MYSQL sirve para almacenar y administrar datos en bases de datos relacionales que cuenta con tablas, vistas, procedimientos almacenados, funciones, etc</p>
                                 </div>
                             </div>
@@ -165,7 +166,7 @@
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
-                                <h5 class="mbr-section-subtitle lead">Puedes darle increibles efectos a tus plantillas con el poder de Jquery</h5>
+                                    <h5 class="mbr-section-subtitle lead">Puedes darle increibles efectos a tus plantillas con el poder de Jquery</h5>
                                     <p class="mbr-section-text lead">Jquery te puede facilitar muchas cosas.Aca te dejo una muestra de su increible funcionalidad</p>
                                 </div>
                             </div>
@@ -182,7 +183,7 @@
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">
-                                <h5 class="mbr-section-subtitle lead">Hoja de estilos en cascada</h5>
+                                    <h5 class="mbr-section-subtitle lead">Hoja de estilos en cascada</h5>
                                     <p class="mbr-section-text lead">para poder darle estylo a tu web aca puedes mirar comandos fundamentales.</p>
                                 </div>
                             </div>
