@@ -23,7 +23,7 @@
     margin-top: 10px;
     text-shadow: 0px 2px 1px #333333; font-weight: bold;">{{$tema->nombre}}</div>
         </div>
-
+        <br><br>
         <div class="row">
 
 
