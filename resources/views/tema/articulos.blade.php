@@ -14,7 +14,14 @@
     <div class="container-fluid">
 
         <div class="row">
-      <div class="col-xs-12 col-lg-10 col-lg-offset-1">{{$tema->nombre}}</div>
+        <div class="col-xs-12 col-lg-10 col-lg-offset-1" style="color: red; text-align: center;
+    font-size: 40px;
+    color: #e67e22;
+    font-family: nevis;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333; font-weight: bold;">{{$tema->nombre}}</div>
         </div>
 
         <div class="row">
