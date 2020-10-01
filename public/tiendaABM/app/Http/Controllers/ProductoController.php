@@ -48,6 +48,7 @@ class ProductoController extends Controller
             'precio_ahora'=>'required',
             'poster'=>'required|max:10000',
             'stock'=>'required',
+            'resena'=>'required',
         ]);
 
         try{
