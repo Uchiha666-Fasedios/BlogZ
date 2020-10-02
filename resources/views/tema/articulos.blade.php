@@ -34,9 +34,9 @@
                     <div class="jsNewsCard news__card" modal-id="#{{ $articulo->id }}">
                         <div class="news__image">
 
-                            {{--  <img class="news__img" alt="" src="{{url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">  --}}
-                              <img class="news__img" alt="" src="{{url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
-                           {{--  <img class="news__img" alt="" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$articulo->images()->first()->nombre) }}">  --}}
+                            {{--  <img class="news__img" alt="" src="{{url('http://www.adrianweb.live/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">  --}}
+                              <img class="news__img" alt="" src="{{url('http://www.adrianweb.live/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
+                           {{--  <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->images()->first()->nombre) }}">  --}}
                         </div>
                         <div class="news__inner">
                             <h5 class="mbr-section-title display-6">{{ $articulo->titulo }}.</h5>
@@ -77,8 +77,8 @@
                               @if($articulo->images->first()) {{-- lo mismo pero gasto menos recursos por no poner ()..metodo images viene del modelo Article gracias al omr--}}
                                <div class="news__image">
                                     @foreach($articulo->images as $imagen)  {{-- metodo images viene del modelo Article gracias al omr --}}
-                                        {{--  <img class="news__img" alt="" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}"> --}}
-                                        <img class="news__img" alt="" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}">
+                                        {{--  <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}"> --}}
+                                        <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
                                     @endforeach
                                 </div>
                                @endif
