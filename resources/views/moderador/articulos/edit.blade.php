@@ -50,7 +50,7 @@
 				</div>
 				<hr>
                 @foreach($articulo->images as $imagen)
-                <img width="190px" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}">{{-- muestra la imagen --}}
+                <img width="190px" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">{{-- muestra la imagen --}}
 				    <a href="{{ route('moderador.imagen.delete',$imagen) }}">
 				      <img style="margin-left: -26px; margin-top: -170px" width="20px" src="{{asset('imagenes/admin/eliminar.png')}}">
 				    </a>
