@@ -14,7 +14,7 @@
     <div class="container-fluid">
 
         <div class="row">
-        <div class="col-xs-12 col-lg-10 col-lg-offset-1" style="color: red; text-align: center;
+      <div class="col-xs-12 col-lg-10 col-lg-offset-1" style="color: red; text-align: center;
     font-size: 40px;
     color: #e67e22;
     font-family: nevis;
@@ -23,7 +23,7 @@
     margin-top: 10px;
     text-shadow: 0px 2px 1px #333333; font-weight: bold;">{{$tema->nombre}}</div>
         </div>
-        <br><br>
+<br><br>
         <div class="row">
 
 
@@ -34,9 +34,9 @@
                     <div class="jsNewsCard news__card" modal-id="#{{ $articulo->id }}">
                         <div class="news__image">
 
-                            {{--  <img class="news__img" alt="" src="{{url('assets/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">  --}}
-                              <img class="news__img" alt="" src="{{asset('storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
-                           {{--  <img class="news__img" alt="" src="{{ Storage::url('imagenesArticulos/'.$articulo->images()->first()->nombre) }}">  --}}
+                            {{--  <img class="news__img" alt="" src="{{url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">  --}}
+                              <img class="news__img" alt="" src="{{url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
+                           {{--  <img class="news__img" alt="" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$articulo->images()->first()->nombre) }}">  --}}
                         </div>
                         <div class="news__inner">
                             <h5 class="mbr-section-title display-6">{{ $articulo->titulo }}.</h5>
@@ -77,8 +77,8 @@
                               @if($articulo->images->first()) {{-- lo mismo pero gasto menos recursos por no poner ()..metodo images viene del modelo Article gracias al omr--}}
                                <div class="news__image">
                                     @foreach($articulo->images as $imagen)  {{-- metodo images viene del modelo Article gracias al omr --}}
-                                        {{--  <img class="news__img" alt="" src="{{ url('assets/imagenesArticulos/'.$imagen->nombre) }}"> --}}
-                                        <img class="news__img" alt="" src="{{ asset('storage/imagenesArticulos/'.$imagen->nombre) }}">
+                                        {{--  <img class="news__img" alt="" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}"> --}}
+                                        <img class="news__img" alt="" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}">
                                     @endforeach
                                 </div>
                                @endif

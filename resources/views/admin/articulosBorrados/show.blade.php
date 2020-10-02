@@ -6,7 +6,7 @@
 	    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
 	    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	    	@foreach($imagenes as $imagen)
-                <img width="230px" src="{{ asset('storage/imagenesArticulos/'.$imagen->nombre) }}">
+                <img width="230px" src="{{ url('http://localhost/bloglaravel/storage/app/public/imagenesArticulos/'.$imagen->nombre) }}">
 	    	@endforeach
 	    </div>
 	</div>

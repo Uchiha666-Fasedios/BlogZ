@@ -41,11 +41,11 @@
 				border: 5px dashed black;
 			}
 
-			.grande{
+			.grandex{
 				font-size: 30px;
 			}
 
-			.margen-superior{
+			.margen-superiorx{
 				display:block;
 				margin-top:45px;
 			}
@@ -113,10 +113,10 @@
 	  parrafos.click(function(){
 		  var that = $(this);//$(this) este this se refiere a el elemento en donde se hizo click en este caso es elemento p
   
-		  if(!that.hasClass('grande')){//hasClass lo q hace es buscar si tiene la clase en este caso grande entonces si no la tiene entra al if
-			  that.addClass('grande');//le agrego la clase
+		  if(!that.hasClass('grandex')){//hasClass lo q hace es buscar si tiene la clase en este caso grande entonces si no la tiene entra al if
+			  that.addClass('grandex');//le agrego la clase
 		  }else{
-			  that.removeClass('grande');//le quito la clase
+			  that.removeClass('grandex');//le quito la clase
 		  }
 	  });
   
@@ -128,9 +128,9 @@
   
   
   // Otros
-	  $('.sin_borde, .zebra').addClass('margen-superior'); //$('p, a') a todos estos elementos le agrego esta clase .addClass('margen-superior')
+	  $('.sin_borde, .zebra').addClass('margen-superiorx'); //$('p, a') a todos estos elementos le agrego esta clase .addClass('margen-superior')
   
-	  var busqueda = $("#elemento2").parent().parent().find('.resaltado');//parent() va para atras find me busca tal clase ..se usa mas q nada si hay un arbol grande y no la encuentro
+	  var busqueda = $("#elemento2").parent().parent().find('.resaltadox');//parent() va para atras find me busca tal clase ..se usa mas q nada si hay un arbol grande y no la encuentro
   
 	  console.log(busqueda);
   </script>
