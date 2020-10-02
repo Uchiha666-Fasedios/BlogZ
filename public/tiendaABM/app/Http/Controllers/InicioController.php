@@ -91,6 +91,7 @@ class InicioController extends Controller
             $pminor=$request->get('pminor');
             $buscar=$request->get('buscar');
             $marca=$request->get('marca');
+            $color=$request->get('color');
             
 
             if($pmajor != '' && $pminor != ''){
@@ -113,14 +114,27 @@ class InicioController extends Controller
                 ->orderby('id','desc')
                 ->paginate(15);
             }
+            //mio
+            else if($color != ''){
+                $buscar=$request->get('buscar');
+                $productos = DB::table('producto')
+                ->where([
+                    ['color','LIKE','%'.$color.'%']  
+                ])
+                ->orderby('id','desc')
+                ->paginate(15);
+            }
+            //fin mio
             else{
                 $pminor = 0;
                 $pmajor = 3000;
                 $marca='';
+                $color='';
                 $productos = DB::table('producto')
                 ->where([
                     ['titulo','LIKE','%'.$buscar.'%'],
-                    ['titulo','LIKE','%'.$marca.'%']  
+                    ['titulo','LIKE','%'.$marca.'%'],  
+                    ['color','LIKE','%'.$color.'%']  
                 ])
                 ->orderby('id','desc')
                 ->paginate(15);

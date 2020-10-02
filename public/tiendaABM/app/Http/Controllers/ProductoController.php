@@ -49,6 +49,7 @@ class ProductoController extends Controller
             'poster'=>'required|max:10000',
             'stock'=>'required',
             'resena'=>'required',
+            'color'=>'required',
         ]);
 
         try{
@@ -64,6 +65,7 @@ class ProductoController extends Controller
                 $producto->idcategoria = $request->get('idcategoria');
                 $producto->precio_ahora = $request->get('precio_ahora');
                 $producto->precio_antes = $request->get('precio_antes');
+                $producto->color = $request->get('color');
                 $producto->stock = $request->get('stock');
                 $producto->estado = 'DISPONIBLE';
                 $producto->resena = $request->get('resena');
@@ -122,9 +124,11 @@ class ProductoController extends Controller
             'idcategoria'=>'required',
             'precio_antes'=>'required',
             'precio_ahora'=>'required',
+            'color'=>'required',
             'poster'=>'max:10000',
             'stock'=>'required',
             'resena'=>'required|max:500',
+            
             
         ]);
 
@@ -143,6 +147,7 @@ class ProductoController extends Controller
                     $producto->idcategoria = $request->get('idcategoria');
                     $producto->precio_ahora = $request->get('precio_ahora');
                     $producto->precio_antes = $request->get('precio_antes');
+                    $producto->color = $request->get('color');
                     $producto->stock = $request->get('stock');
                     $producto->resena = $request->get('resena');
                     $producto->estado = 'DISPONIBLE';
@@ -175,6 +180,7 @@ class ProductoController extends Controller
                 $producto->idcategoria = $request->get('idcategoria');
                 $producto->precio_ahora = $request->get('precio_ahora');
                 $producto->precio_antes = $request->get('precio_antes');
+                $producto->color = $request->get('color');
                 $producto->stock = $request->get('stock');
                 $producto->estado = 'DISPONIBLE';
                 $producto->slug = Str::slug($request->get('titulo'),'_');
