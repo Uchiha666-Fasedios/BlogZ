@@ -41,6 +41,9 @@
                                     <h2 class="product-title" style="text-align: center;">
                                         <a href="{{route('producto',$item->slug)}}" style="white-space: normal">{{$item->titulo}}</a>
                                     </h2>
+                                    <br>
+                                    Colores disponibles:
+                                <h5 class="product-title">{{$item->color}}</h5>
                                     <div class="price-box">
                                         <span class="product-price">
                                             @if ($config->tipo_moneda == 'Soles')
@@ -184,29 +187,135 @@
                             <div class="widget-body">
                                 <ul class="config-swatch-list">
                                     <li>
-                                        <a href="#" style="background-color: #4090d5;"></a>
+                                    
+
+                                        {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="celeste">
+                    
+                                            <button type="submit" style="background-color: #4090d5; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #4090d5;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                        
                                     </li>
-                                    <li class="active">
-                                        <a href="#" style="background-color: #f5494a;"></a>
+                                   {{-- <li class="active"> --}} 
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="rojo">
+                    
+                                            <button type="submit" style="background-color: #f5494a; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #f5494a;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
                                     <li>
-                                        <a href="#" style="background-color: #fca309;"></a>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="rosa">
+                    
+                                            <button type="submit" style="background-color: #EC7063; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #EC7063;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+
+                                    
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="amarillo">
+                    
+                                            <button type="submit" style="background-color: #fca309; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #fca309;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
                                     <li>
-                                        <a href="#" style="background-color: #11426b;"></a>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="dorado">
+                    
+                                            <button type="submit" style="background-color: #B9770E; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #B9770E;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+
+                                    
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="azul">
+                    
+                                            <button type="submit" style="background-color: #11426b; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #11426b;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
                                     <li>
-                                        <a href="#" style="background-color: #f0f0f0;"></a>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="blanco">
+                    
+                                            <button type="submit" style="background-color: #f0f0f0; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #f0f0f0;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
                                     <li>
-                                        <a href="#" style="background-color: #3fd5c9;"></a>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="celeste fluo">
+                    
+                                            <button type="submit" style="background-color: #3fd5c9; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #3fd5c9;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
                                     <li>
-                                        <a href="#" style="background-color: #979c1c;"></a>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="verde pasto">
+                    
+                                            <button type="submit" style="background-color: #979c1c; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #979c1c;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
                                     <li>
-                                        <a href="#" style="background-color: #7d5a3c;"></a>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="marron">
+                    
+                                            <button type="submit" style="background-color: #7d5a3c; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #7d5a3c;"></a></button>
+                                        {{Form::close()}}
+                                        
                                     </li>
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="negro">
+                    
+                                            <button type="submit" style="background-color: #17202A; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #17202A;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="gris">
+                    
+                                            <button type="submit" style="background-color: #99A3A4; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #99A3A4;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="naranja">
+                    
+                                            <button type="submit" style="background-color: #BA4A00; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #BA4A00;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="verde">
+                    
+                                            <button type="submit" style="background-color: #0B5345; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #0B5345;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="violeta">
+                    
+                                            <button type="submit" style="background-color: #4A235A; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #4A235A;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
+                                    
+                                    
                                 </ul>
                             </div><!-- End .widget-body -->
                         </div><!-- End .collapse -->

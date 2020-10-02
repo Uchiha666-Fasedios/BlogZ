@@ -37,7 +37,7 @@
                         <div class="col-lg-5 col-md-6">
                             <div class="product-single-details">
                                 <h1 class="product-title">{{$producto->titulo}}</h1>
-
+                                
                                 <div class="ratings-container">
                                     <div class="product-ratings">
                                         <span class="ratings" style="width:60%"></span><!-- End .ratings -->
@@ -45,7 +45,9 @@
 
                                     <a href="#" class="rating-link">( 6 Reviews )</a>
                                 </div><!-- End .product-container -->
-
+                               <br>
+                                Colores disponibles:
+                                <h5 class="product-title">{{$producto->color}}</h5>
                                 <div class="price-box">
                                     <span class="old-price">
                                                  @if ($config->tipo_moneda == 'Soles')

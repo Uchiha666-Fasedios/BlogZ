@@ -58,7 +58,7 @@
         <header class="header">
             <div class="header-top" style="background: #232f3e !important; color: white !important;border: none !important">
                 <div class="container">
-                    <div class="header-left header-dropdowns">
+                {{-- <div class="header-left header-dropdowns">
                         <div class="header-dropdown">
                             <a href="#">USD</a>
                             <div class="header-menu">
@@ -105,6 +105,8 @@
                             </div><!-- End .dropdown-menu -->
                         </div><!-- End .dropdown -->
                     </div><!-- End .header-left -->
+
+                    --}}
 
                     <div class="header-right">
                         <p class="welcome-msg">Default welcome msg! </p>

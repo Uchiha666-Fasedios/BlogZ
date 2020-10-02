@@ -138,7 +138,7 @@
 
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                {{-- <div class="card-img iconbox"><a href="https://mobirise.com" class="cm-icon cm-icon-note mbr-iconfont mbr-iconfont-features16" style="color: rgb(252, 122, 96); text-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 20px, rgba(0, 0, 0, 0.0980392) -10px 10px 7px;"></a></div> --}}
-                               <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal2"><img src="assets/images/pmysql.jpg" alt="php"></a></div>
+                               <div class="card-img iconbox"><a href="#" data-toggle="modal" data-target="#ventanaModal2"><img src="assets/images/mysql.jpg" alt="php"></a></div>
                             </div>
                             <div class="col-xs-6 padding-left-0 padding-right-0">
                                 <div class="text-xs-left">

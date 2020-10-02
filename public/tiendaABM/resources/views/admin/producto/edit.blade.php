@@ -97,6 +97,19 @@
                                                         </span>
                                                     @endif
                                                 </div>
+                                                {{--mio--}}
+                                                        <div class="col-lg-3 form-group">
+                                                            <label><b>Color</b></label>
+                                                            <input type="text" name="color" class="form-control {{ $errors->has('color') ? ' is-invalid' : '' }}" value="{{$producto->color}}">
+                                                            @if ($errors->has('color'))
+                                                                <span class="invalid-feedback" role="alert">
+                                                                    <strong>{{ $errors->first('color') }}</strong>
+                                                                </span>
+                                                            @endif
+                                                        </div>
+
+                                                        {{--fin mio--}}
+
                                                 <div class="col-lg-3 form-group">
                                                     <label><b>Estado</b></label>
                                                     <input type="text" readonly value="ACTIVO" class="form-control">
