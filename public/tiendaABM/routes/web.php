@@ -57,6 +57,7 @@ Route::delete('cuenta/direccion/{id}','UsuarioController@direccion_eliminar')->n
 Route::get('productos','InicioController@productos')->name('productos');
 
 Route::get('productos/categoria/{categoria}','InicioController@productos_by_cat')->name('productos.categoria');
+
 Route::get('producto/{slug}','InicioController@producto_detalle')->name('producto');
 Route::post('producto/carrito','UsuarioController@agregar_carrito')->name('agregar.carrito');
 Route::delete('producto/carrito/suprimir/{id}','UsuarioController@quitar_del_carrito')->name('quitar.carrito');
