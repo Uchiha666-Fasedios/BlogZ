@@ -10,9 +10,11 @@ use App\Producto;
 use Session;
 use Illuminate\Support\Facades\Redirect;
 use DB;
-
+session_start(); 
 class InicioController extends Controller
 {
+
+    
     public function index(){
         try {
             $best = DB::table('producto as p')
@@ -78,78 +80,499 @@ class InicioController extends Controller
 
     }
 
+
     public function productos(Request $request){
 
-        $categorias = DB::table('categoria')
-        ->orderby('titulo','asc')
-        ->get();
-
+        if (isset($request->categoriaTitulo)) {
+            $_SESSION['idCat']=$request->idCat;
+            $_SESSION['categoria']=$request->categoriaTitulo;
+        }
         
 
-        if($request){
-            $pmajor=$request->get('pmajor');
-            $pminor=$request->get('pminor');
-            $buscar=$request->get('buscar');
-            $marca=$request->get('marca');
-            $color=$request->get('color');
-            
+if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
+ isset($_SESSION['marca']) && isset($_SESSION['color']) && isset($_SESSION['categoria'])) {
 
-            if($pmajor != '' && $pminor != ''){
-                $buscar=$request->get('buscar');
-                $productos = DB::table('producto')
-                ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+    $pmajor=$_SESSION['pricemajor'];
+    $pminor=$_SESSION['priceminor'];
+    $idCat=$_SESSION['idCat'];
+    
+    $marca=$_SESSION['marca'];
+    $color=$_SESSION['color'];
+
+
+    $productos = DB::table('producto')
+    ->whereBetween('precio_ahora', [$pminor,  $pmajor])
                 ->where([
-                    ['titulo','LIKE','%'.$buscar.'%'],
+                    ['color','LIKE','%'.$color.'%'], 
+                    ['idcategoria','LIKE','%'.$idCat.'%'],
+                    ['titulo','LIKE','%'.$marca.'%']
+                    
                 ])
                 ->orderby('id','desc')
                 ->paginate(15);
-                
-            }
-            else if($marca != ''){
-                $buscar=$request->get('buscar');
-                $productos = DB::table('producto')
-                ->where([
-                    ['titulo','LIKE','%'.$marca.'%']  
-                ])
-                ->orderby('id','desc')
-                ->paginate(15);
-            }
-            //mio
-            else if($color != ''){
-                $buscar=$request->get('buscar');
-                $productos = DB::table('producto')
-                ->where([
-                    ['color','LIKE','%'.$color.'%']  
-                ])
-                ->orderby('id','desc')
-                ->paginate(15);
-            }
-            //fin mio
-            else{
-                $pminor = 0;
-                $pmajor = 3000;
-                $marca='';
-                $color='';
-                $productos = DB::table('producto')
-                ->where([
-                    ['titulo','LIKE','%'.$buscar.'%'],
-                    ['titulo','LIKE','%'.$marca.'%'],  
-                    ['color','LIKE','%'.$color.'%']  
-                ])
-                ->orderby('id','desc')
-                ->paginate(15);
-                
-            }
-            try {
                 $features = DB::table('producto')
                 ->get()
                 ->random(3);
-            } catch (\Throwable $th) {
-                return view('productos',compact('categorias','productos','buscar','pminor','pmajor'));
-            }
 
-            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-        }
+                $categorias = DB::table('categoria')
+                ->orderby('titulo','asc')
+                ->get();
+                return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                
+
+            }else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
+            isset($_SESSION['marca']) && isset($_SESSION['categoria']) && !isset($_SESSION['color'])){ 
+
+
+            $pmajor=$_SESSION['pricemajor'];
+    $pminor=$_SESSION['priceminor'];
+    $idCat=$_SESSION['idCat'];
+    $marca=$_SESSION['marca'];
+    
+
+
+    $productos = DB::table('producto')
+    ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                ->where([
+                    ['idcategoria','LIKE','%'.$idCat.'%'],
+                    ['titulo','LIKE','%'.$marca.'%']
+                    
+                ])
+                ->orderby('id','desc')
+                ->paginate(15);
+                $features = DB::table('producto')
+                ->get()
+                ->random(3);
+
+                $categorias = DB::table('categoria')
+                ->orderby('titulo','asc')
+                ->get();
+                return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+           
+            }else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
+            isset($_SESSION['color']) && isset($_SESSION['categoria']) && !isset($_SESSION['marca'])){
+
+
+                $pmajor=$_SESSION['pricemajor'];
+                $pminor=$_SESSION['priceminor'];
+                $idCat=$_SESSION['idCat'];
+                $color=$_SESSION['color'];
+                
+            
+            
+                $productos = DB::table('producto')
+                ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                            ->where([
+                                ['idcategoria','LIKE','%'.$idCat.'%'],
+                                ['color','LIKE','%'.$color.'%']
+                                
+                            ])
+                            ->orderby('id','desc')
+                            ->paginate(15);
+                            $features = DB::table('producto')
+                            ->get()
+                            ->random(3);
+            
+                            $categorias = DB::table('categoria')
+                            ->orderby('titulo','asc')
+                            ->get();
+                            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+
+
+            }else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor'])
+             && isset($_SESSION['categoria']) && !isset($_SESSION['color']) && !isset($_SESSION['marca'])){
+            
+            
+                $idCat=$_SESSION['idCat'];
+                $pmajor=$_SESSION['pricemajor'];
+                $pminor=$_SESSION['priceminor'];
+                
+            
+                $productos = DB::table('producto')
+                ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                ->where([
+                    ['idcategoria','LIKE','%'.$idCat.'%']
+                    
+                    
+                ])
+                            ->orderby('id','desc')
+                            ->paginate(15);
+                            $features = DB::table('producto')
+                            ->get()
+                            ->random(3);
+            
+                            $categorias = DB::table('categoria')
+                            ->orderby('titulo','asc')
+                            ->get();
+                            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+
+            }else if (isset($_SESSION['marca']) && isset($_SESSION['color']) && isset($_SESSION['categoria']) 
+            && !isset($_SESSION['pricemajor']) && !isset($_SESSION['priceminor'])) {
+
+                $pminor = 0;
+                           $pmajor = 3000;
+                
+                $marca=$_SESSION['marca'];
+                $color=$_SESSION['color'];
+                $idCat=$_SESSION['idCat'];
+            
+                $productos = DB::table('producto')
+                            ->where([
+                                ['color','LIKE','%'.$color.'%'], 
+                                ['idcategoria','LIKE','%'.$idCat.'%'],
+                                ['titulo','LIKE','%'.$marca.'%']
+                                
+                            ])
+                            ->orderby('id','desc')
+                            ->paginate(15);
+                            $features = DB::table('producto')
+                            ->get()
+                            ->random(3);
+            
+                            $categorias = DB::table('categoria')
+                            ->orderby('titulo','asc')
+                            ->get();
+                            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            
+            
+
+            }else if (isset($_SESSION['marca']) && !isset($_SESSION['color']) && !isset($_SESSION['categoria']) 
+            && !isset($_SESSION['pricemajor']) && !isset($_SESSION['priceminor'])) {
+
+                $pminor = 0;
+                $pmajor = 3000;
+     
+     $marca=$_SESSION['marca'];
+     
+ 
+     $productos = DB::table('producto')
+                 ->where([
+                     
+                     ['titulo','LIKE','%'.$marca.'%']
+                     
+                 ])
+                 ->orderby('id','desc')
+                 ->paginate(15);
+                 $features = DB::table('producto')
+                 ->get()
+                 ->random(3);
+ 
+                 $categorias = DB::table('categoria')
+                 ->orderby('titulo','asc')
+                 ->get();
+                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 
+            
+            }else if (isset($_SESSION['marca']) && isset($_SESSION['categoria']) && !isset($_SESSION['priceminor'])
+            && !isset($_SESSION['pricemajor']) && !isset($_SESSION['color'])){
+                $pminor = 0;
+                $pmajor = 3000;
+     
+     $marca=$_SESSION['marca'];
+     $idCat=$_SESSION['idCat'];
+ 
+ 
+     $productos = DB::table('producto')
+                 ->where([
+                    ['idcategoria','LIKE','%'.$idCat.'%'],
+                     ['titulo','LIKE','%'.$marca.'%']
+                     
+                 ])
+                 ->orderby('id','desc')
+                 ->paginate(15);
+                 $features = DB::table('producto')
+                 ->get()
+                 ->random(3);
+ 
+                 $categorias = DB::table('categoria')
+                 ->orderby('titulo','asc')
+                 ->get();
+                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 
+
+            }else if (isset($_SESSION['color']) && !isset($_SESSION['categoria']) && !isset($_SESSION['pricemajor'])
+            && !isset($_SESSION['priceminor']) && !isset($_SESSION['marca'])){
+                $pminor = 0;
+                $pmajor = 3000;
+     
+     $color=$_SESSION['color'];
+     
+ 
+ 
+     $productos = DB::table('producto')
+                 ->where([
+                     
+                     ['color','LIKE','%'.$color.'%']
+                     
+                 ])
+                 ->orderby('id','desc')
+                 ->paginate(15);
+                 $features = DB::table('producto')
+                 ->get()
+                 ->random(3);
+ 
+                 $categorias = DB::table('categoria')
+                 ->orderby('titulo','asc')
+                 ->get();
+                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 
+                 } else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
+                 isset($_SESSION['color']) &&  isset($_SESSION['marca']) && !isset($_SESSION['categoria'])){
+
+
+                    $pmajor=$_SESSION['pricemajor'];
+                    $pminor=$_SESSION['priceminor'];
+                    
+                    $color=$_SESSION['color'];
+                    $marca=$_SESSION['marca'];
+                   
+                    
+                
+                
+                    $productos = DB::table('producto')
+                    ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                                ->where([
+                                     
+                                    ['color','LIKE','%'.$color.'%'], 
+                                ['titulo','LIKE','%'.$marca.'%']
+                                
+                                    
+                                ])
+                                ->orderby('id','desc')
+                                ->paginate(15);
+                                $features = DB::table('producto')
+                                ->get()
+                                ->random(3);
+                
+                                $categorias = DB::table('categoria')
+                                ->orderby('titulo','asc')
+                                ->get();
+                                return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+    
+
+
+                    } else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
+                    isset($_SESSION['color']) && !isset($_SESSION['marca']) && !isset($_SESSION['categoria'])){
+
+
+                        $pmajor=$_SESSION['pricemajor'];
+                        $pminor=$_SESSION['priceminor'];
+                        
+                        $color=$_SESSION['color'];
+                        
+                       
+                        
+                    
+                    
+                        $productos = DB::table('producto')
+                        ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                                    ->where([
+                                         
+                                        ['color','LIKE','%'.$color.'%']
+                                   
+                                    
+                                        
+                                    ])
+                                    ->orderby('id','desc')
+                                    ->paginate(15);
+                                    $features = DB::table('producto')
+                                    ->get()
+                                    ->random(3);
+                    
+                                    $categorias = DB::table('categoria')
+                                    ->orderby('titulo','asc')
+                                    ->get();
+                                    return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                    //return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+        
+
+                    } else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor'])
+                    && !isset($_SESSION['categoria']) && !isset($_SESSION['color']) 
+                    && !isset($_SESSION['marca'])){
+
+
+
+                        $pmajor=$_SESSION['pricemajor'];
+                        $pminor=$_SESSION['priceminor'];
+                       
+                       
+                        
+                        
+                        
+                    
+                    
+                        $productos = DB::table('producto')
+                        ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                                    
+                                         
+                                         
+                                   
+                                    
+                                        
+                                    
+                                    ->orderby('id','desc')
+                                    ->paginate(15);
+                                    $features = DB::table('producto')
+                                    ->get()
+                                    ->random(3);
+                    
+                                    $categorias = DB::table('categoria')
+                                    ->orderby('titulo','asc')
+                                    ->get();
+                                    return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                    return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+        
+
+                    } else if(isset($_SESSION['categoria']) && !isset($_SESSION['color']) 
+                    && !isset($_SESSION['priceminor']) && !isset($_SESSION['pricemajor']) && !isset($_SESSION['marca'])){
+
+
+
+                        $pminor = 0;
+                        $pmajor = 3000;
+                     
+                      
+                      $idCat=$_SESSION['idCat'];
+                      
+                  
+                  
+                      $productos = DB::table('producto')
+                                  ->where([
+                                    
+                                  ['idcategoria','LIKE','%'.$idCat.'%']
+                                      
+                                  ])
+                                  ->orderby('id','desc')
+                                  ->paginate(15);
+                                  $features = DB::table('producto')
+                                  ->get()
+                                  ->random(3);
+                  
+                                  $categorias = DB::table('categoria')
+                                  ->orderby('titulo','asc')
+                                  ->get();
+                                  return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                  return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+      
+
+                  }else if(isset($_SESSION['categoria']) && isset($_SESSION['color'])
+                  && !isset($_SESSION['priceminor']) && !isset($_SESSION['pricemajor'])
+                  && !isset($_SESSION['marca'])){
+
+                    $pminor = 0;
+                    $pmajor = 3000;
+                 
+                  
+                  $color=$_SESSION['color'];
+                  $idCat=$_SESSION['idCat'];
+                  
+              
+              
+                  $productos = DB::table('producto')
+                              ->where([
+                                ['color','LIKE','%'.$color.'%'],
+                              ['idcategoria','LIKE','%'.$idCat.'%']
+                                  
+                              ])
+                              ->orderby('id','desc')
+                              ->paginate(15);
+                              $features = DB::table('producto')
+                              ->get()
+                              ->random(3);
+              
+                              $categorias = DB::table('categoria')
+                              ->orderby('titulo','asc')
+                              ->get();
+                              return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                              return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+  
+
+                  } 
+                            
+                               else{
+                              
+                    $categorias = DB::table('categoria')
+                    ->orderby('titulo','asc')
+                    ->get();
+                    
+                   
+           
+                   if($request){
+                       $pmajor=$request->get('pmajor');
+                       $pminor=$request->get('pminor');
+                       $buscar=$request->get('buscar');
+                       $marca=$request->get('marca');
+                       $color=$request->get('color');
+                       
+           
+                       if($pmajor != '' && $pminor != ''){
+                           $buscar=$request->get('buscar');
+                           $productos = DB::table('producto')
+                           ->whereBetween('precio_ahora', [$pminor,  $pmajor])
+                           ->where([
+                               ['titulo','LIKE','%'.$buscar.'%'],
+                           ])
+                           ->orderby('id','desc')
+                           ->paginate(15);
+                           
+                       }
+                       else if($marca != ''){
+                           $buscar=$request->get('buscar');
+                           $productos = DB::table('producto')
+                           ->where([
+                               ['titulo','LIKE','%'.$marca.'%']  
+                           ])
+                           ->orderby('id','desc')
+                           ->paginate(15);
+                       }
+                       //mio
+                       else if($color != ''){
+                           $buscar=$request->get('buscar');
+                           $productos = DB::table('producto')
+                           ->where([
+                               ['color','LIKE','%'.$color.'%']  
+                           ])
+                           ->orderby('id','desc')
+                           ->paginate(15);
+                       }
+                       //fin mio
+                       else{
+                           $pminor = 0;
+                           $pmajor = 3000;
+                           $marca='';
+                           $color='';
+                           $productos = DB::table('producto')
+                           ->where([
+                               ['titulo','LIKE','%'.$buscar.'%'],
+                               ['titulo','LIKE','%'.$marca.'%'],  
+                               ['color','LIKE','%'.$color.'%']  
+                           ])
+                           ->orderby('id','desc')
+                           ->paginate(15);
+                           
+                       }
+                       try {
+                           $features = DB::table('producto')
+                           ->get()
+                           ->random(3);
+                       } catch (\Throwable $th) {
+                           return view('productos',compact('categorias','productos','buscar','pminor','pmajor'));
+                       }
+           
+                       return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                   }
+               }
+
+
 
         
     }
@@ -163,17 +586,23 @@ class InicioController extends Controller
         $cat = DB::table('categoria')
         ->where('titulo','=',$categoria)
         ->first();
+        
+        
+        if (isset($categoria) && $categoria != null) {
+            $_SESSION['categoria'] = $categoria;
+            $_SESSION['idCat'] = $cat->id;
+        } 
 
         $pminor = 0;
         $pmajor = 3000;
 
         $productos = DB::table('producto')
         ->where([
-            ['idcategoria','=',$cat->id],
+            ['idcategoria','=',$cat->id]
         ])
         ->orderby('id','desc')
         ->paginate(15);
-
+        
         try {
             $features = DB::table('producto')
             ->get()

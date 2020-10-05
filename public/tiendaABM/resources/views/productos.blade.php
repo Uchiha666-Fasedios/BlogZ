@@ -1,5 +1,41 @@
+
 @extends('layouts.users')
 @section('user-content')
+<?php
+ 
+
+if (isset($_GET['quitocolor'])) {
+    unset( $_SESSION["color"] );
+    header("Location: http://127.0.0.1:8000/productos"); 
+    exit;
+}
+
+if (isset($_GET['quitomarca'])) {
+    unset( $_SESSION["marca"] );
+    header("Location: http://127.0.0.1:8000/productos"); 
+exit;
+}
+
+if (isset($_GET['quitocategoria'])) {
+    unset( $_SESSION["categoria"] );
+    unset( $_SESSION["idCat"] );
+    header("Location: http://127.0.0.1:8000/productos"); 
+exit;
+}
+
+
+
+if (isset($_GET['quitoprice'])) {
+    unset( $_SESSION["priceminor"] );
+    unset( $_SESSION["pricemajor"] );
+    header("Location: http://127.0.0.1:8000/productos"); 
+exit;
+}
+
+
+
+?>
+
 <main class="main">
     <div class="banner banner-cat" style="background-image: url('assets/images/banners/banner-top.jpg');">
         <div class="banner-content container">
@@ -12,7 +48,7 @@
     </div><!-- End .banner -->
 
     <?php 
-    
+  
             $config = DB::table('configuraciones')
             ->first();
     ?>
@@ -23,6 +59,39 @@
                 
                 <div class="row row-sm">
 
+
+                <?php 
+
+
+//unset( $_SESSION["color"] );
+
+if (isset($_GET["color"]) && $_GET["color"] != null) {
+$_SESSION['color'] = $_GET["color"];
+header("Location: http://127.0.0.1:8000/productos"); //lo recargo porqe si no no agarra
+exit;//para q corte y no ejecute lo otro
+}
+
+if (isset($_GET["marca"]) && $_GET["marca"] != null) {
+$_SESSION['marca'] = $_GET["marca"];
+header("Location: http://127.0.0.1:8000/productos"); 
+exit;
+}
+
+if (isset($_GET["pminor"]) && $_GET["pminor"] != null && isset($_GET["pmajor"]) && $_GET["pmajor"] != null) {
+$_SESSION['priceminor'] = $_GET["pminor"];
+$_SESSION['pricemajor'] = $_GET["pmajor"];
+header("Location: http://127.0.0.1:8000/productos"); 
+exit;
+}
+
+if (isset($_GET["categoria"]) && $_GET["categoria"] != null) {
+    $_SESSION['categoria'] = $_GET["categoria"];
+    header("Location: http://127.0.0.1:8000/productos"); 
+    exit;
+    }
+               
+               
+                ?>
                     @foreach ($productos as $item)
                         <div class="col-6 col-md-4">
                             <div class="product-default">
@@ -42,6 +111,7 @@
                                         <a href="{{route('producto',$item->slug)}}" style="white-space: normal">{{$item->titulo}}</a>
                                     </h2>
                                     <br>
+
                                     Colores disponibles:
                                 <h5 class="product-title">{{$item->color}}</h5>
                                     <div class="price-box">
@@ -88,8 +158,73 @@
             </div><!-- End .col-lg-9 -->
 
             <aside class="sidebar-shop col-lg-3 order-lg-first">
-                <div class="sidebar-wrapper">
+            <div class="sidebar-wrapper">
+                    <?php
+if (isset($_SESSION['color']) || isset($_SESSION['categoria']) || isset($_SESSION['pricemajor'])
+ || isset($_SESSION['priceminor']) || isset($_SESSION['marca'])) {?>
+Quitar filtros
+
+<?php
+
+ } 
+
+                if (isset($_SESSION['color'])) {?>
+                    
+                    <form action="">
+                    
+                    <input  class="btn btn-link" style= "color: #F39C12" type="submit" name="quitocolor" value="quitar color <?php echo $_SESSION['color']; ?>">
+                    
+                </form>
+                    
+                    
+                    
+                 <?php 
+                }
+
+                if (isset($_SESSION['marca'])) {?>
+                    
+                    <form>
+                    
+                    <input  class="btn btn-link" style= "color: #F39C12" type="submit" name="quitomarca" value="quitar marca <?php echo $_SESSION['marca']; ?>">
+                    
+                </form>
+                    
+                    
+                 <?php 
+                }
+
+                if (isset($_SESSION['categoria'])) {?>
+                    
+                    <form>
+                    
+                    <input  class="btn btn-link" style= "color: #F39C12"  type="submit" name="quitocategoria" value="quitar categoria <?php echo $_SESSION['categoria']; ?>">
+                </form>
+                    
+                    
+                    
+                    
+                 <?php 
+                }
+
+                if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor'])) {?>
+                    
+                    <form>
+                    
+                    <input  class="btn btn-link" style= "color: #F39C12"  type="submit" name="quitoprice" value="quitar precio <?php echo ' hasta '. $_SESSION['pricemajor']; ?>">
+                    
+                    </form>
+                    
+                    
+                    
+                 <?php 
+                } ?>
+
+
+
+               
                     <div class="widget">
+      
+
                         <h3 class="widget-title">
                             <a data-toggle="collapse" href="#widget-body-1" role="button" aria-expanded="true" aria-controls="widget-body-1">CATEGORIAS</a>
                         </h3>
@@ -98,7 +233,19 @@
                             <div class="widget-body">
                                 <ul class="cat-list">
                                     @foreach ($categorias as $item)
+                                    <?php if (isset($_SESSION['categoria']) || isset($_SESSION['color']) 
+                                    || isset($_SESSION['marca']) || isset($_SESSION['priceminor']) || isset($_SESSION['pricemajor'])) { ?>
+                                        
+                                        {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                        <input type="hidden" name="idCat" value="{{$item->id}}">
+                                        <input type="hidden" name="categoriaTitulo" value="{{$item->titulo}}">
+                    
+                                        <button type="submit" class="btn-marca"><i class="{{$item->icono}}"></i>{{$item->titulo}}</button>
+                                        {{Form::close()}}
+                                        <?php }else{ ?>
+
                                         <li><a href="{{route('productos.categoria',strtolower($item->titulo))}}"><i class="{{$item->icono}}"></i> {{$item->titulo}}</a></li>
+                                        <?php }?>
                                     @endforeach
                                     
                                     
@@ -232,7 +379,14 @@
                                         {{Form::close()}}
                                         
                                     </li>
-
+                                    <li>
+                                    {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
+                                            <input type="hidden" name="color" value="plateado">
+                    
+                                            <button type="submit" style="background-color: #e3e4e5; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #e3e4e5;"></a></button>
+                                        {{Form::close()}}
+                                        
+                                    </li>
                                     
                                     <li>
                                     {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
@@ -246,7 +400,7 @@
                                     {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
                                             <input type="hidden" name="color" value="blanco">
                     
-                                            <button type="submit" style="background-color: #f0f0f0; border-width: 0px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #f0f0f0;"></a></button>
+                                            <button type="submit" style="background-color: #FFFFFF; border-width: 1px; border-height: 0px; display: flex; cursor: pointer; width: 2.2rem; height: 2.2rem;" class="btn-color"><a style="background-color: #FFFFFF;"></a></button>
                                         {{Form::close()}}
                                         
                                     </li>
@@ -416,3 +570,5 @@
     </script>
 @endpush
 @endsection
+
+
