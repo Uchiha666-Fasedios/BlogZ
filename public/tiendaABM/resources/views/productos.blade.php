@@ -6,20 +6,20 @@
 
 if (isset($_GET['quitocolor'])) {
     unset( $_SESSION["color"] );
-    header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+    header("Location: ./productos"); 
     exit;
 }
 
 if (isset($_GET['quitomarca'])) {
     unset( $_SESSION["marca"] );
-    header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+    header("Location: ./productos"); 
 exit;
 }
 
 if (isset($_GET['quitocategoria'])) {
     unset( $_SESSION["categoria"] );
     unset( $_SESSION["idCat"] );
-    header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+    header("Location: ./productos"); 
 exit;
 }
 
@@ -28,7 +28,7 @@ exit;
 if (isset($_GET['quitoprice'])) {
     unset( $_SESSION["priceminor"] );
     unset( $_SESSION["pricemajor"] );
-    header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+    header("Location: ./productos"); 
 exit;
 }
 
@@ -67,26 +67,27 @@ exit;
 
 if (isset($_GET["color"]) && $_GET["color"] != null) {
 $_SESSION['color'] = $_GET["color"];
-header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); //lo recargo porqe si no no agarra
+header("Location: ./productos"); //lo recargo porqe si no no agarra
 exit;//para q corte y no ejecute lo otro
 }
 
 if (isset($_GET["marca"]) && $_GET["marca"] != null) {
 $_SESSION['marca'] = $_GET["marca"];
-header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+header("Location: ./productos"); 
 exit;
 }
 
 if (isset($_GET["pminor"]) && $_GET["pminor"] != null && isset($_GET["pmajor"]) && $_GET["pmajor"] != null) {
 $_SESSION['priceminor'] = $_GET["pminor"];
 $_SESSION['pricemajor'] = $_GET["pmajor"];
-header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+//header("Location: http://127.0.0.1:8000/productos"); 
+header("Location: ./productos"); 
 exit;
 }
 
 if (isset($_GET["categoria"]) && $_GET["categoria"] != null) {
     $_SESSION['categoria'] = $_GET["categoria"];
-    header("Location: http://www.adrianweb.live/tiendaABM/public/productos"); 
+    header("Location: ./productos"); 
     exit;
     }
                

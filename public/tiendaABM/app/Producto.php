@@ -19,6 +19,7 @@ class Producto extends Model
         'poster',
         'precio_ahora',
         'precio_antes',
+        'color',
         'estado',
         'stock',
         'slug',
