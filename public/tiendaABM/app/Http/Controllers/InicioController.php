@@ -117,8 +117,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                 $categorias = DB::table('categoria')
                 ->orderby('titulo','asc')
                 ->get();
-                return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
                 
 
             }else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
@@ -148,8 +148,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                 $categorias = DB::table('categoria')
                 ->orderby('titulo','asc')
                 ->get();
-                return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
            
             }else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
             isset($_SESSION['color']) && isset($_SESSION['categoria']) && !isset($_SESSION['marca'])){
@@ -178,8 +178,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                             $categorias = DB::table('categoria')
                             ->orderby('titulo','asc')
                             ->get();
-                            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                            return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                            return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
 
 
             }else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor'])
@@ -207,8 +207,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                             $categorias = DB::table('categoria')
                             ->orderby('titulo','asc')
                             ->get();
-                            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                            return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                            return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
 
             }else if (isset($_SESSION['marca']) && isset($_SESSION['color']) && isset($_SESSION['categoria']) 
             && !isset($_SESSION['pricemajor']) && !isset($_SESSION['priceminor'])) {
@@ -236,8 +236,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                             $categorias = DB::table('categoria')
                             ->orderby('titulo','asc')
                             ->get();
-                            return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                            return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                            return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                            return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
                             
             
 
@@ -265,8 +265,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                  $categorias = DB::table('categoria')
                  ->orderby('titulo','asc')
                  ->get();
-                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                 return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                 return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
                  
             
             }else if (isset($_SESSION['marca']) && isset($_SESSION['categoria']) && !isset($_SESSION['priceminor'])
@@ -293,8 +293,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                  $categorias = DB::table('categoria')
                  ->orderby('titulo','asc')
                  ->get();
-                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                 return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                 return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
                  
 
             }else if (isset($_SESSION['color']) && !isset($_SESSION['categoria']) && !isset($_SESSION['pricemajor'])
@@ -321,8 +321,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                  $categorias = DB::table('categoria')
                  ->orderby('titulo','asc')
                  ->get();
-                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                 return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                 return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                 return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
                  
                  } else if(isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                  isset($_SESSION['color']) &&  isset($_SESSION['marca']) && !isset($_SESSION['categoria'])){
@@ -355,8 +355,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                                 $categorias = DB::table('categoria')
                                 ->orderby('titulo','asc')
                                 ->get();
-                                return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                                return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                                return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
     
 
 
@@ -391,7 +391,7 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                                     $categorias = DB::table('categoria')
                                     ->orderby('titulo','asc')
                                     ->get();
-                                    return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                    return view('productos',compact('categorias','productos','pminor','pmajor','features'));
                                     //return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
         
 
@@ -428,8 +428,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                                     $categorias = DB::table('categoria')
                                     ->orderby('titulo','asc')
                                     ->get();
-                                    return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                                    return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                    return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                                    return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
         
 
                     } else if(isset($_SESSION['categoria']) && !isset($_SESSION['color']) 
@@ -460,8 +460,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                                   $categorias = DB::table('categoria')
                                   ->orderby('titulo','asc')
                                   ->get();
-                                  return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                                  return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                                  return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                                  return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
       
 
                   }else if(isset($_SESSION['categoria']) && isset($_SESSION['color'])
@@ -492,8 +492,8 @@ if (isset($_SESSION['pricemajor']) && isset($_SESSION['priceminor']) &&
                               $categorias = DB::table('categoria')
                               ->orderby('titulo','asc')
                               ->get();
-                              return view('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
-                              return redirect('productos',compact('categorias','productos','buscar','pminor','pmajor','features'));
+                              return view('productos',compact('categorias','productos','pminor','pmajor','features'));
+                              return redirect('productos',compact('categorias','productos','pminor','pmajor','features'));
   
 
                   } 
