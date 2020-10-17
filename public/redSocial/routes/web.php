@@ -45,6 +45,7 @@ Route::get('/', function () {/*
 Auth::routes();//rutas especiales q ya vienen hechas se genero por poner en artisan el comando de autenticacion php artisan make:auth para la autenticacion
 Route::get('/', 'HomeController@index')->name('home');//le borre home y deje la barra sola para q vaya al login tambien lo hice en app/http/auth/RegisterController para q despues de registrar vaya al login
 
+Route::middleware(['auth'])->group(function(){
 // USUARIO
 Route::get('/configuracion', 'UserController@config')->name('config');//name('config') ES EL NOMBRE DE LA RUTA PARA INVOCAR LA RUTA DE CUALQUIER LADO, '/configuracion' ES COMO SE VA A VER EN LA URL
 Route::post('/user/update', 'UserController@update')->name('user.update');
@@ -69,3 +70,4 @@ Route::get('/comment/delete/{id}', 'CommentController@delete')->name('comment.de
 Route::get('/like/{image_id}', 'LikeController@like')->name('like.save');
 Route::get('/dislike/{image_id}', 'LikeController@dislike')->name('like.delete');
 Route::get('/likes', 'LikeController@index')->name('likes');
+});
