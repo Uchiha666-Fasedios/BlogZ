@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {% if edit is defined %}{#is defined esto es como hacer un isset si me llega la variable edit si existe entro #}
+        Editar tarea
+    {%else%}
+        Crear tarea
+    {%endif%}
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper">
+        <h2>
+            {% if edit is defined %}
+                Editar tarea
+            {%else%}
+                Crear tarea
+            {%endif%}
+        </h2>
+        {{ form_start(form) }}{#imprimo el formulario y le paso la variable form q es la q llega del controlador#}
+        {{ form_widget(form) }}{#me permite imprimir por pantalla los campos del formulario#}
+        {{ form_end(form) }}{#cierro el formulario#}
+    </div>
+{% endblock %}

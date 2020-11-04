@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login de usuarios{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h2>Login de usuarios</h2>
+    
+    {% if error %}
+        <div class="alert alert-error">
+            {{ error.messagekey|trans(error.messageData, 'security') }}{#messagekey esto es un indice q ya trae el objeto de error | esto es un pai en laravel se explico en resumen asi lo hace simfony no se explico mucho esto#}
+        </div>
+    {% endif %}
+
+    {#{% if app.user %}
+<pre>
+    {{ dump(app.user) }}
+</pre>
+    {% endif %}#}
+    
+    <form action="{{ path('login') }}" method="POST">
+        <label for="username">Email</label>
+        <input type="email" id="username" name="_username" value="{{ last_username }}" /> {#last_username esta me llega desde el controlador #}
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="_password" /> {#_password asi lo hace symfony#}
+        
+        <div class="clearfix"></div> {#para q no me flote un input #}
+        
+        <input type="submit" value="Entrar" />
+    </form>
+    
+</div>
+{% endblock %}

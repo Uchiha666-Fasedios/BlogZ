@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registro de usuarios{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h2>Registro de usuarios</h2>
+    {{ form_start(form) }}{#imprimo el formulario y le paso la variable form q es la q llega del controlador#}
+    {{ form_widget(form) }}{#me permite imprimir por pantalla los campos del formulario#}
+    {{ form_end(form) }} {#cierro el formulario#}
+</div>
+{% endblock %}
