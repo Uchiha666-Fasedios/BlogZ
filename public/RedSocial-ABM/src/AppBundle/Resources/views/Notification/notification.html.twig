@@ -1,0 +1,44 @@
+{% extends "AppBundle:Layouts:layouts.html.twig" %} {#heredo esta vista con sus blokes#}
+
+
+
+
+
+{% block content %}
+
+<div class='container'>
+  
+<div class="col-lg-12 box-default box-notification">
+
+<h2 class="box-header">notification</h2>
+
+<div class="box-content">
+
+{% for notification in pagination %}
+    <div class="col-lg-12 notification-item">
+    
+    <div class="alert alert-default">
+    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+    
+{% set notu = notification.typeId|get_user %} {# |get_user este filtro me trae el usuario de la notificacion#}
+
+{% if notification.type == "follow" %}
+    <a href="{{ path('user_profile', { 'nickname': notu.nick } )}}">{{notu.name}} {{notu.surname}} </a>te esta siguiendo
+{% endif %}
+{% if notification.type == "like" %}
+    <a href="{{ path('user_profile', { 'nickname': notu.nick } )}}">{{notu.name}} {{notu.surname}} </a> le ha dado me gusta a una de tus publicaciones!!
+{% endif %}
+
+    </div>
+    </div>
+{% endfor %}
+
+<div class="clearfix"></div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

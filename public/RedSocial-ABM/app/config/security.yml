@@ -1,0 +1,59 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/security.html
+security:
+    encoders:
+        BackendBundle\Entity\User:
+            algorithm: bcrypt
+            cost: 4
+    # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+         user_db_provider:
+            entity:
+                class: BackendBundle:User
+                property: email
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            anonymous: ~
+            provider: user_db_provider
+            form_login:
+                login_path: login
+                check_path: login_check
+                
+
+            logout:
+                path: /logout
+                target: /
+            # activate different ways to authenticate
+
+            # http_basic: ~
+            # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+
+            # form_login: ~
+            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+    access_control:
+         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }  #PODER ENTRAR ANONIMO 
+         - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY } #PODER ENTRAR ANONIMO
+         - { path: ^/home, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/publications/remove, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/my-data, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/people, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/search, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/user, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/private_message, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/private_message/sended, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/private_message/notification/get, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/notifications, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/notifications/get, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/like, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/unlike, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/likes, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/follow, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/unfollow, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/following, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user
+         - { path: ^/followed, roles: [ROLE_USER, ROLE_ADMIN] }  #PODER ENTRAR role ADMIn y user

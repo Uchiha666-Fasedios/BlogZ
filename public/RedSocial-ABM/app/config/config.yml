@@ -1,0 +1,110 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+    - { resource: "@BackendBundle/Resources/config/services.yml" }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
+
+framework:
+    #esi:             ~
+    #translator:      { fallbacks: ["%locale%"] }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments:       ~
+    http_method_override: true
+    assets: ~
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: "%kernel.root_dir%/../var/data/data.sqlite"
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #path:     "%database_path%"
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
+
+
+
+# KnpPaginatorBunle:
+knp_paginator:
+    page_range: 5  
+    default_options:  
+        page_name: page  
+        sort_field_name: sort  
+        sort_direction_name: direction
+        distinct: true  
+    template:   
+        pagination: AppBundle:Layouts:custom_pagination.html.twig
+        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig
+        #pagination: AppBundle:Layouts:custom_pagination.html.twig
+        #sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig
+
+        
+#knp_paginator:
+   # page_range: 5                      # rango por defecto de paginas en los controles del paginador
+   # default_options:
+      #  page_name: page                # nombre del parámetro de la URL para la página
+       # sort_field_name: sort          # nombre del parámetro de la URL para la ordenación
+      #  sort_direction_name: direction # nombre del parámetro de la URL para la dirección(ASC o DESC)
+       # distinct: true                 # Garantizar resultados distintos
+   # template:
+        #pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig  # plantilla controles
+       # sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # plantilla links ordenación
+
+
+        # KnpPaginatorBunle:
+#Knp_paginator:
+    #page_range: 5  #me dice el rango de pagina cuanto muestra
+   # default_options:   #q voy a definir parametros necesarios
+   #     page_name: page  #este parametro el nombre q va a guardar el numero de la pagina
+   #     sort_field_name: sort  #con q parametro va a trabajar se va a usar para q se ordene de sierta forma
+    #    sort_direction_name: direction
+    #    distinc: true  #este se va a usar para q los nueros de la paginacion sean distintos
+    #template:   #las plantillas q va  a usar para mostrar los controladores etc..
+    #    pagination: AppBundle:Layouts:custom_pagination.html.twig
+     #   sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig
