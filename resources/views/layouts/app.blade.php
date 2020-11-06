@@ -272,7 +272,6 @@
   <script src="{{ asset('assets/wowslider-effect/effects.js') }}"></script>
   <script src="{{ asset('assets/wowslider-init/script.js') }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.bundle.min.js"></script>libreria para q se desplege en elbuscador dicha caja de busqeda--}}
-  {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/bloodhound.min.js"></script>--}}{{--libreria para q se desplege en elbuscador dicha caja de busqeda--}}
 <script src="{{ asset('js/buscador-predictivo.js') }}"></script>
 <script src="{{ asset('js/preloader.js') }}"></script>{{--para q ande la imagen de la carga--}}
 
