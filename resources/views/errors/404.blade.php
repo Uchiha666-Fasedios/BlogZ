@@ -9,7 +9,7 @@
         <div class="row">
 
             <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-            	<p>Esta página no existe, no persista en su error. Fin.</p>
+            	<h2>Esta página no existe, no persista en su error :(</h2>
             </div>
 
         </div>

@@ -9,7 +9,7 @@
         <div class="row">
         	
             <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-            	<p>No tienes autorización. Fin.</p>
+            	<h2>No tienes autorización. :-( Fin.</h2>
             </div>
 	        
         </div>
