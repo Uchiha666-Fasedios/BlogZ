@@ -1,0 +1,15 @@
+<!--esta propiedad es de ejemplo de pasar datos de componente padre a hijo-->
+<strong>{{anchura}}</strong>
+
+<div class="container">
+    <!--este es el codigo de la pagina del slider -->
+    <div class="galeria">
+        <div><img src="/assets/img/coffee1.jpg" title="Funky roots"></div>
+        <div><img src="/assets/img/coffee2.jpg" title="The long and winding road"></div>
+        <div><img src="/assets/img/coffee3.jpg" title="Happy trees"></div>
+    </div>
+
+</div>
+
+<!--cuando le doy click se lanza el metodo lanzar($event)-->
+<button (click)="lanzar($event)">Conseguir autor</button>

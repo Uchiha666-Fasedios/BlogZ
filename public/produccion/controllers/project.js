@@ -120,7 +120,7 @@ var controller = {
 
         if (req.files) { //si lo q me llega es un archivo
             var filePath = req.files.image.path; //agarro el path de la imagen q tiene la direccion donde se guardo y la imagen
-            var fileSplit = filePath.split('/'); //aca recorta la parte y agarra desde \\ o sea tomo el nombre con la extencion
+            var fileSplit = filePath.split('\\'); //aca recorta la parte y agarra desde \\ o sea tomo el nombre con la extencion
             var fileName = fileSplit[1]; //fileSplit[1] agarra el nombre del archivo de la imagen
             var extSplit = fileName.split('\.'); //split identifica caracteres o caracteres para usar en la separación de la cadena. 
             var fileExt = extSplit[1]; //agarra la extencion

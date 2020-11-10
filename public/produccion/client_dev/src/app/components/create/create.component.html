@@ -1,0 +1,78 @@
+<!--muestro todo si *ngIf="project" si hay algo-->
+<div class="container" *ngIf="project">
+    <h2>{{title}}</h2>
+    <!--si status q viene de create.component.ts es igual a success entro 
+    class="message success" esta clase es para darle estylos en css-->
+    <div class="message success" *ngIf="status == 'success'">
+        <!--[routerLink] directiva de atributo q nos da el router las rutas y ['/proyecto'] nos dice la ruta q va a ir save_project._id y lleva todo el proyecto-->
+        El proyecto se ha creado correctamente, puedes <a [routerLink]="['/proyecto', save_project._id]">verlo aquí</a>
+    </div>
+    <!--si status q viene de create.component.ts es igual a failed entro -->
+    <div class="message failed" *ngIf="status == 'failed'">
+        El proyecto NO SE HA PODIDO CREAR
+    </div>
+    <!--#projectForm le decimos q es un formulario de angular y le ponemos projectForm de nombre. y esto ="ngForm" q es una etiqueta form  
+        (ngSubmit) el evento submit hace esta funcion
+        onSubmit es la funcion q esta en create.component.ts
+    (projectForm) de parametro el nombre del formulario typo angular, le estoy pasando todo el formulario-->
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+
+        <p>
+            <label for="name">Nombre</label>
+            <!--#nombre="ngModel" le decimos q va ser un input de angular q se va a llamar name y va ser un ngModel
+            ..[(ngModel)] directiva para q los cambios se vean instantaneamente
+        project.name puede ser una propiedad pero en este caso es un objeto lo q se va a utilizar para modificar objeto project q tiene todo el modelo llama a la propiedad name
+        -->
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required />
+            <!--name.touched si este input fue tocado y !name.valid no sea valido o sea con required-->
+            <span class="form_error" *ngIf="name.touched && !name.valid">
+				El nombre es obligatorio
+			</span>
+        </p>
+
+        <p>
+            <label for="description">Descripción</label>
+            <textarea name="description" #description="ngModel" [(ngModel)]="project.description" required></textarea>
+            <span class="form_error" *ngIf="description.touched && !description.valid">
+				La descripción es obligatoria
+			</span>
+        </p>
+
+        <p>
+            <label for="category">Categoría</label>
+            <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required />
+            <span class="form_error" *ngIf="category.touched && !category.valid">
+				La categoría es obligatoria
+			</span>
+        </p>
+
+        <p>
+            <label for="year">Año de lanzamiento</label>
+            <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year" />
+        </p>
+
+        <p>
+            <label for="langs">Lenguajes utilizados</label>
+            <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required />
+            <span class="form_error" *ngIf="langs.touched && !langs.valid">
+				Los lenguajes son obligatorios
+			</span>
+        </p>
+
+        <p>
+
+
+            <label for="image">Imagen del proyecto</label>
+            <!--*ngIf="project.image" si existe la imagen la mostramos esto es mas q nada cuando entramos a editar q pasa por esta vista-->
+            <span class="image" *ngIf="project.image" style="float:none;">
+				<img src="{{url+'get-image/'+project.image}}" style="width:100px;"/>
+            </span><br/>
+            <!--change este evento lo q hace es q cuando nota q hay un cambio en el input lanza un metodo q tengamos en el componente 
+            fileChangeEvent es el metodo $event contiene todo el archivo-->
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" />
+
+        </p>
+        <!--[disabled] el boton va a estar tapado !projectForm.form.valid mientras el formulario sea invalido -->
+        <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
+    </form>
+</div>
