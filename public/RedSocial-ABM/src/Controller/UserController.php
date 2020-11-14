@@ -82,7 +82,7 @@ if (is_object($this->getUser())) {//getUser si este metodo q esta en el controla
 		$form->handleRequest($request);//handleRequest este metodo recoge los datos del formulario y los adjunta al objeto form 
             // Comprobar si el form se ha enviado
            
-		if($form->isSubmitted() && $form->isValid()){//si se toco el boton del formlario creado.. isValid es propio de symfony significa q cuando el formulario es valido va a hacer todo lo q sigue
+		if($form->isSubmitted()){//si se toco el boton del formlario creado.. isValid es propio de symfony significa q cuando el formulario es valido va a hacer todo lo q sigue
             $em = $this->getDoctrine()->getManager();// esto me va permitir trabajar con las entidades y guardar en la base de datos
             $query= $em->createQuery('SELECT u FROM App:User u WHERE u.email = :email OR u.nick = :nick')
                ->setParameter('email', $form->get("email")->getData())//$form->get("email") concigo del formulario el email getData no concige en limpio el dato q nos va llegando
