@@ -293,4 +293,16 @@ font-weight: bold;
     width: 119px;
 }
 
+.profile-box #user-stats {
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 86%;
+    text-align: center;
+}
+
 }
