@@ -119,9 +119,12 @@ $publication->setDocument(null);
 
 $publications= $this->getPublications($request, $paginator);
 
+$re=$publications->getTotalItemCount();//getTotalItemCount() me saca la cantidad  
+
             return $this->render('Publication/home.html.twig', Array( //me voy a esta vista llevandome la variable para mostrarla ahi
                 'form' => $form->createView(),//pasandole el formulario .. createView me genera el html para imprimir el formulario
-                 'pagination' => $publications
+                 'pagination' => $publications,
+                 're' => $re
             )); 
     }
 

@@ -6,7 +6,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;//me permite acceder al encoder q creamos en config/packages/security.yaml
-
+use Psr\Container\ContainerInterface;
 //use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 //use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -38,7 +38,7 @@ private $session;
     }
 
 
-    public function follow(Request $request){
+    public function follow(Request $request,ContainerInterface $container){
 
         
 $user = $this->getUser();//obtenemos al usuario logeado
@@ -59,7 +59,8 @@ $flush=$em->flush();//flush guarda en la base de datos
 if ($flush == null) {//si es igual a null o sea si no devuelve un error y nada de eso
 
     //$notification = $this->get('app.notification_service');//llamo al servicio global q cree en services.yml
-    //$notification->set($followed, 'follow', $user->getId());//llamo al metodo del servicio q lleva 3 parametros
+    $notification = $container->get('app.notification_service');
+    $notification->set($followed, 'follow', $user->getId());//llamo al metodo del servicio q lleva 3 parametros
     //el primer parametro saco el usuario de la publicaion q se le dio like el 2 le meto el string de like el 3 el id del usuario logeado q le dio like y el 4 me guarda el id del usuario de la notificacion q se le dio like
 
 

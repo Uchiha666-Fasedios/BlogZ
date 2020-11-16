@@ -15,10 +15,18 @@
 <div class='container'>
    <div id="timeline" class="col-lg-7 box-default timeline pull-left">
                 <h1 class="box-header">Timeline</h1>
-    
+                {% if re == 0 %}
+                <h2>Aún no hay publicaciones</h2>
+                <img src="{{ asset('assets/images/roja.gif') }}" /> 
+                <h5>...podes buscar gente y seguirla</h5>
+                  {% endif %}
+   
                
        <div class='box-content'>
              {% for publication in pagination %}
+ 
+
+
                <div class="col-lg-12 publication-item">
                
                 <div class="avatar">
@@ -124,6 +132,8 @@ data-toggle="tooltip" data-placement="bottom" title="Ya no me gusta" > </span>
 {% set user_stats = app.user|user_stats %}
 
 
+
+
 <div class="following-data">
 
 <a href="{{ path('following_users', { 'nickname': app.user.nick } )}}">
@@ -137,12 +147,14 @@ data-toggle="tooltip" data-placement="bottom" title="Ya no me gusta" > </span>
 </a>
 
 </div>
+
+
 <div class="following-data">
 
 <a href="{{ path('followed_users', { 'nickname': app.user.nick } )}}">
 
   <span class="label-stat">
-    Seguidores
+    Te siguen
   </span>
   <span class="number-stat">
     {{user_stats.followers}}
@@ -150,6 +162,9 @@ data-toggle="tooltip" data-placement="bottom" title="Ya no me gusta" > </span>
 </a>
 
 </div>
+
+
+
 
 <div class="following-data">
 
@@ -169,7 +184,7 @@ data-toggle="tooltip" data-placement="bottom" title="Ya no me gusta" > </span>
 <a href="{{ path('user_likes', { 'nickname': app.user.nick } )}}">
 
   <span class="label-stat">
-    Me gustan
+    Me gusta
   </span>
   <span class="number-stat">
     {{user_stats.likes}}

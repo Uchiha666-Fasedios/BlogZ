@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
-
+use Psr\Container\ContainerInterface;
 //use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 //use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,7 +21,7 @@ use Knp\Component\Pager\PaginatorInterface;
 class LikeController extends AbstractController
 {
 
-    public function like($id = null){
+    public function like($id = null,ContainerInterface $container){
 
         $user =  $this->getUser();//getUser() me trae el usuario logeado
         $em = $this->getDoctrine()->getManager();// esto me va permitir trabajar con las entidades y guardar en la base de datos
@@ -38,7 +38,8 @@ class LikeController extends AbstractController
 
             if ($flush == null) {//si es igual a null o sea si no devuelve un error y nada de eso
 
-$notification = $this->get('app.notification_service');//llamo al servicio global q cree en services.yaml
+//$notification = $this->get('app.notification_service');//llamo al servicio global q cree en services.yaml
+$notification = $container->get('app.notification_service');
 $notification->set($publication->getUser(), 'like', $user->getId(), $publication->getId());//llamo al metodo del servicio q lleva 3 parametros
 //el primer parametro saco el usuario de la publicaion q se le dio like el 2 le meto el string de like el 3 el id del usuario logeado q le dio like y el 4 me guarda el id del usuario de la notificacion q se le dio like
                 $status='Te gusta esta pubicacion !!';
