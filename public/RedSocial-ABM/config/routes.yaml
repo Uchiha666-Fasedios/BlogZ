@@ -1,5 +1,8 @@
 
     #esta carga por defecto es la q sale primero
+    public:
+    path: /
+    controller: App\Controller\UserController::login
 
 app_homepage:
     path: /home

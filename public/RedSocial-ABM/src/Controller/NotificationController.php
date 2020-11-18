@@ -16,9 +16,7 @@ use Knp\Component\Pager\PaginatorInterface;
 
 class NotificationController extends AbstractController
 {
-    /**
-     * @Route("/", name="homepage")
-     */
+    
     public function index(Request $request,PaginatorInterface $paginator,ContainerInterface $container)
     {
         $user =  $this->getUser();//getUser() me trae el usuario logeado
