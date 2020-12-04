@@ -18,10 +18,7 @@ public function image(){
   return $this->belongsTo('App\Image', 'image_id');//todo lo q tenga relacion con ..  image_id de comments y id de Image
 }
 
-// Relación de Muchos a Uno
-public function video(){
-  return $this->belongsTo('App\Video', 'video_id');//todo lo q tenga relacion con ..  image_id de comments y id de Image
-}
+
 
 
 }

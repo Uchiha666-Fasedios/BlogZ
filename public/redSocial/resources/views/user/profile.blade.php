@@ -29,12 +29,7 @@
 				@include('includes.image',['image'=>$image])<?php //muestro la lista de las imagenes del usuario (estoy pasando de parametro 'image' se llama la variable y le paso $image)?>
 			@endforeach
 
-			@foreach($user->videos as $image)<?php //$images viene del controlador HomeController ?>
-
-          
-@include('includes.video',['video'=>$image])<?php //me traigo el include donde esta el codigo de esta tarjeta pasandole el parametro de la variable del foreach ['image'=>$image] llevo el parametro $image para poder utilizarlo en el include?>
-
-     @endforeach
+			
         </div>
 
     </div>

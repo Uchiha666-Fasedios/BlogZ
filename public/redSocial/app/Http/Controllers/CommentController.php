@@ -12,34 +12,6 @@ class CommentController extends Controller
  }
 
 
- public function videoSave(Request $request){//este validate lo saqe de RegisterController autoHecho por laravel
-
-  // Validación
-  $validate = $this->validate($request, [//este validate lo saqe de RegisterController autoHecho por laravel
-    'video_id' => 'integer|required',
-    'content' => 'string|required'
-  ]);
-  
-  // Recoger datos
-  $user = \Auth::user();// la barra es para q me coja el namespace porqe Auth es una clase general echa por laravel q se invoca asi OBTENGO AL USUARIO LOGEADO
-  $video_id = $request->input('video_id');//lo del post ya lo ingreso aca
-  $content = $request->input('content');
-  
-  // Asigno los valores a mi nuevo objeto a guardar
-  $comment = new Comment();//instancia la clase q es un modelo
-  $comment->user_id = $user->id;
-  $comment->video_id = $video_id;
-  $comment->content = $content;
-  
-  // Guardar en la bd
-  $comment->save();//esto me lo guarda a la tabla de la base de datos save()esta echo por laravel y me ahorro de hacer input value etc..
-  
-  // Redirección
-  return redirect()->route('video.detail', ['id' => $video_id])
-           ->with([
-            'message' => 'Has publicado tu comentario correctamente!!'
-           ]);
-  }
 
 public function save(Request $request){//este validate lo saqe de RegisterController autoHecho por laravel
 

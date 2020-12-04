@@ -31,7 +31,5 @@ class User extends Authenticatable
     return $this->hasMany('App\Image');//saco todas las imagenes cuyo usuario sea el q yo estoy sacando ahora y ya funcionaria
     }
 
-    public function videos(){
-      return $this->hasMany('App\Video');//saco todas las imagenes cuyo usuario sea el q yo estoy sacando ahora y ya funcionaria
-      }
+    
 }
