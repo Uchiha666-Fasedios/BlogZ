@@ -17,4 +17,10 @@ class Like extends Model
   public function image(){
     return $this->belongsTo('App\Image', 'image_id');
   }
+
+  // Relación de Muchos a Uno
+  public function video(){
+    return $this->belongsTo('App\Video', 'video_id');
+  }
+  
 }
