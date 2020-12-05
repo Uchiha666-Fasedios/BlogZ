@@ -17,7 +17,4 @@ class Like extends Model
   public function image(){
     return $this->belongsTo('App\Image', 'image_id');
   }
-
-  
-  
 }

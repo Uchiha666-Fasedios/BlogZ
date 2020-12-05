@@ -12,9 +12,6 @@
 
             @endforeach
 
-
-           
-
             <!--PAGINACION-->
             <div class="clearfix"></div><?php //para limpiar los flotados Un clearfix es una forma para que un elemento a borre automáticamente sus elementos secundarios , para que no necesite agregar marcas adicionales. Generalmente se usa en diseños flotantes donde los elementos se flotan para apilarse horizontalmente.?>
 

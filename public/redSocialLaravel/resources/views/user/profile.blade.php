@@ -29,7 +29,7 @@
 				@include('includes.image',['image'=>$image])<?php //muestro la lista de las imagenes del usuario (estoy pasando de parametro 'image' se llama la variable y le paso $image)?>
 			@endforeach
 
-			
+
         </div>
 
     </div>

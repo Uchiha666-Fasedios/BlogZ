@@ -17,8 +17,4 @@ public function user(){
 public function image(){
   return $this->belongsTo('App\Image', 'image_id');//todo lo q tenga relacion con ..  image_id de comments y id de Image
 }
-
-
-
-
 }

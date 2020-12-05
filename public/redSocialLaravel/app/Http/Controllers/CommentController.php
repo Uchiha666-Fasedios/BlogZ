@@ -11,8 +11,6 @@ class CommentController extends Controller
      $this->middleware('auth');//este middleware hace q el resto de metodos sean privados
  }
 
-
-
 public function save(Request $request){//este validate lo saqe de RegisterController autoHecho por laravel
 
 // Validación
