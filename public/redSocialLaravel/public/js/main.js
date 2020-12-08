@@ -1,4 +1,4 @@
-var url = 'http://www.adrianweb.live/redSocialLaravel/public/';
+var url = 'http://www.adrianweb.live/redSocialLaravel/public';
 window.addEventListener("load", function() { //window.addEventListener("load" cuando carga la pagina
 
     $('.btn-like').css('cursor', 'pointer');
@@ -14,7 +14,7 @@ window.addEventListener("load", function() { //window.addEventListener("load" cu
             //con esto guardo en la base de datos porqe .. url: 'http://localhost/blogLaravel/redsocial/public/like/' + $(this).data('id'),
             //esa url invoca a la ruta Route::get('/like/{image_id}', 'LikeController@like')->name('like.save'); q es la q guarda
             $.ajax({ /*creo el objeto json */
-                url: 'http://www.adrianweb.live/redSocial/public/like/' + $(this).data('id'), //el atributo id q toma desde la vista.. en realidad se llama data-id pero puedo cogerlo asi con data q es una funcion de javascrip q espera un id
+                url: url + '/like/' + $(this).data('id'), //el atributo id q toma desde la vista.. en realidad se llama data-id pero puedo cogerlo asi con data q es una funcion de javascrip q espera un id
                 type: 'GET', //le digo q va ser por get
                 success: function(response) {
                     if (response.like) { /*like es el nombre del objeto json q me creo  porqe la funcion se llama like*/
