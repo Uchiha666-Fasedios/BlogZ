@@ -20,7 +20,7 @@ $(document).ready(function() {
     }));
 
     ias.extension(new IASSpinnerExtension({
-        src: URL + '/RedSocial-ABM/../assets/images/ajax-loader.gif'
+        src: URL + '../assets/images/ajax-loader.gif'
 
     }));
 
