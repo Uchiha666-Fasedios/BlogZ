@@ -34,7 +34,15 @@
 
               <div class="user-item-content">
                    <p>
+
+                  {% if pagination.getTotalItemCount != 0 %}
                    <a class="user-link" href="{{ path('user_profile', { 'nickname': user.nick } )}}">{{user.name}} {{user.surname}} - {{user.nick}}  </a>
+
+                   {% endif %}
+
+
+
+
                    </p>
                     <p>{{user.bio}}</p>
               </div>
@@ -42,8 +50,8 @@
            <div class="pull-right buttons-following">
 
                  {#% if app.user|following(user) == true %#} {#| con este palo digo q voy a llamar al filtro following(user)(es un filtro q se creo)#}
-  
-  
+
+
               <button class="btn btn-sm btn-success btn-follow
               {%if app.user|following(user) == true %} {#| con este palo digo q voy a llamar al filtro following(user)(es un filtro q se creo)#}
                 hidden
@@ -55,7 +63,7 @@
               {#% endif %#}
 
               {#% if app.user|following(user) == false %#} {#| con este palo digo q voy a llamar al filtro following(user)(es un filtro q se creo)#}
-  
+
               <button class="btn btn-sm btn-default btn-unfollow
               {% if app.user|following(user) == false %}{#si no estamos siguiendo al usuario me ocultas el boton#}
                 hidden
@@ -67,7 +75,7 @@
                   {#% endif %#}
           </div>
 
-    
+
                {% endif %}
                       <div class="clearfix"></div>
                           <hr/>
@@ -76,7 +84,9 @@
 
               {% endfor %}
     </div>
-
+    {% if pagination.getTotalItemCount == 0 %}
+    <h2>no se encontraron resultados</h2>
+{% endif %}
           <div class="navigation">
            {{ knp_pagination_render(pagination) }}
          </div>
