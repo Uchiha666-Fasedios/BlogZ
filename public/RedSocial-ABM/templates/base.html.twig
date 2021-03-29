@@ -9,11 +9,11 @@
 
     {% block stylesheets %}
         <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
-        
+
         <link href="{{ asset('assets/css/bootstrap.cosmo.min.css') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset('assets/css/styles.css') }}" type="text/css" rel="stylesheet" />
-         
-    
+
+
     {% endblock %}
 
     {% block javascripts %}
@@ -21,18 +21,18 @@
      var URL ="{{ app.request.getSchemeAndHttpHost() }}/RedSocial-ABM/public"; //getSchemeAndHttpHost esta funcion es propia de twig y nos saca la url base localhos8080 etc.. lo otro ay q agregarle si estas en produccion agregale tu dominio o quiza no ay q agregarle
      </script>
 
-      
+
        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
        <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
        <script src="{{ asset('assets/js/jquery-ias.min.js') }}"></script>
        <script src="{{ asset('assets/js/custom/common.js') }}"></script>
-      
+
     {% endblock %}
 </head>
 <body>
 
   <header>
-  
+
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
   <div class="navbar-header">
@@ -48,7 +48,7 @@
                     NETWORK
                     </a>
   </div>
-  
+
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   <ul class="nav navbar-nav">
 {% if app.user == null %}
@@ -89,7 +89,7 @@
 
 
 <li>
-                
+
                 <form action="{{ path("user_search") }}" class="navbar-form navbar-left">
                 <div class="form-group">
                 <input type="text" name="search" placeholder="Buscar gente" class="form-control" />
@@ -101,11 +101,11 @@
                 </li>
 {% endif %}
   </ul>
-  
+
 {% if app.user != null %}
     <ul class="nav navbar-nav navbar-right">
 
-              
+
 
                  <li>
                     <a  href="{{path("private_message")}}">
@@ -115,7 +115,7 @@
 
                     <span class="label label-success label-notifications-msg"></span>{#aca se pone el numero de notificaciones esta echo con javascrip ajax archivo common.js#}
 
-                    
+
                     </a>
                 </li>
 
@@ -126,14 +126,14 @@
                     Notificaciones
 
                     <span class="label label-success label-notifications"></span>{#aca se pone el numero de notificaciones esta echo con javascrip ajax archivo common.js#}
-                    
+
                     </a>
                 </li>
 
     <li class="dropdown">
-     
+
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-   
+
    <div class="avatar">
 
    {% if app.user.image == null %}
@@ -143,7 +143,7 @@
    {% endif %}
 
    </div>
-   
+
     {{app.user.name}} {{app.user.surname}}
     <span class="caret"></apan>
     </a>
@@ -170,9 +170,9 @@
     <li>
     <a href="">
     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-   
+
     Ayuda
-    
+
     </a>
     </li>
     </ul>
@@ -184,16 +184,16 @@
 
 
 
-    
+
 {% endif %}
 
 
   </div>
-  
-  
+
+
   </div>
   </nav>
-  </header>  
+  </header>
 
 
 <section id="content">

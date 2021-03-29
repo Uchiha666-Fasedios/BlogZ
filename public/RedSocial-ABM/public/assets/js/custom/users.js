@@ -35,8 +35,8 @@ $(document).ready(function() {
 
 
 
-    //esto es cuando cargo la paguina me lanza esta funcion 
-    ias.on('ready', function(event) { //ias.on('ready' ESTO ES PROPIO DE ias.on 
+    //esto es cuando cargo la paguina me lanza esta funcion
+    ias.on('ready', function(event) { //ias.on('ready' ESTO ES PROPIO DE ias.on
         followButtons();
     });
     //y cuando hago scroll ambien carga esta funcion
@@ -57,7 +57,7 @@ function followButtons() {
 
     $(".btn-follow").unbind('click').click(function() { //unbind para q no se lancen varios clik ..evento click hago click en el boton seguir
         $(this).addClass('hidden'); //al darle click al boton vamos a ocultarlo le ponemos la clase hidden
-        $(this).parent().find('.btn-unfollow').removeClass("hidden"); //sacamos la 
+        $(this).parent().find('.btn-unfollow').removeClass("hidden"); //sacamos la
 
         $.ajax({ //$.ajax metodo para usar ajax {} porqe es un json
             url: URL + '/follow', //le indico la url q voy a enviar
