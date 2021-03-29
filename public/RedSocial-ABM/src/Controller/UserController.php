@@ -329,7 +329,9 @@ if (count($searched) ==1) {//es q puso una palabra
     $query,$request->query->getInt('page',1),5  //5 son los registros q se van a mostrar por pagina
     );
 
-
+if (count($dql == null)) {
+    return $this->redirect($this->generateURL('home_publications'));
+}
     return $this->render('User/users.html.twig', array(
         "pagination" => $pagination
 ));
