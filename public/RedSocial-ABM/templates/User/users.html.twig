@@ -35,7 +35,7 @@
               <div class="user-item-content">
                    <p>
 
-                  {% if pagination.getTotalItemCount != 0 %}
+                  {% if user.nick != null %}
                    <a class="user-link" href="{{ path('user_profile', { 'nickname': user.nick } )}}">{{user.name}} {{user.surname}} - {{user.nick}}  </a>
 
                    {% endif %}
