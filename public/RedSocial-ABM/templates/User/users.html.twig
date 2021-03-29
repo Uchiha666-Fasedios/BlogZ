@@ -18,6 +18,10 @@
            </apan>
       </div>
 
+
+ {% if pagination.getTotalItemCount != 0 %}
+
+
           <hr/>
        <div class="box-content box-users">
             {% for user in pagination %}
@@ -35,10 +39,10 @@
               <div class="user-item-content">
                    <p>
 
-                  {% if user.nick != null %}
+
                    <a class="user-link" href="{{ path('user_profile', { 'nickname': user.nick } )}}">{{user.name}} {{user.surname}} - {{user.nick}}  </a>
 
-                   {% endif %}
+
 
 
 
@@ -84,6 +88,7 @@
 
               {% endfor %}
     </div>
+     {% endif %}
     {% if pagination.getTotalItemCount == 0 %}
     <h2>no se encontraron resultados</h2>
 {% endif %}
