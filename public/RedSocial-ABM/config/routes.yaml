@@ -12,18 +12,18 @@ app_homepage:
 home_publications:
     path: /home
     controller: App\Controller\PublicationController::index
-    
+
 
 remove_publication:
     path: /publication/remove/{id}
     controller: App\Controller\PublicationController::remove
     defaults: {id: null}
-    
+
 
 login:
     path: /login
     controller: App\Controller\UserController::login
-    
+
 logout:
     path: /logout
 
@@ -36,15 +36,15 @@ register:
     controller: App\Controller\UserController::register
 
 user_profile:
-    #path: /user/{nickname,paginator} 
-    path: /user/{nickname} 
+    #path: /user/{nickname,paginator}
+    path: /user/{nickname,paginator}
     controller: App\Controller\UserController::profile
     defaults: {nickname: null}
 
 
 user_nick_test:
     path: /nick-test
-    controller: App\Controller\UserController::nickTest   
+    controller: App\Controller\UserController::nickTest
     methods: [POST]
 
 
@@ -59,14 +59,14 @@ user_list:
 user_search:
     path: /search
     controller: App\Controller\UserController::search
-    
-    
+
+
 following_follow:
     path: /follow
     controller: App\Controller\FollowingController::follow
     methods: [POST]
 
-    
+
 following_unfollow:
     path: /unfollow
     controller: App\Controller\FollowingController::unfollow
@@ -78,7 +78,7 @@ following_users:
     path: /following/{nickname}
     controller: App\Controller\FollowingController::following
     defaults: {nickname: null}
-    
+
 
 followed_users:
     path: /followed/{nickname}
@@ -91,13 +91,13 @@ like_publication:
     path: /like/{id}
     controller: App\Controller\LikeController::like
     defaults: {id: null}
-    
+
 
 unlike_publication:
     path: /unlike/{id}
     controller: App\Controller\LikeController::unlike
     defaults: {unlike: null}
-    
+
 
 user_likes:
     path: /likes/{nickname}
@@ -108,30 +108,29 @@ user_likes:
 notifications_page:
     path: /notifications
     controller: App\Controller\NotificationController::index
-    
+
 
 notifications_ajax:
     path: /notifications/get
     controller: App\Controller\NotificationController::countNotifications
-    
-   
+
+
 private_message:
     path: /private_message
     controller: App\Controller\PrivateMessageController::index
-   
-    
+
+
 private_message_sended:
     path: /private_message/sended
     controller: App\Controller\PrivateMessageController::sended
-    
+
 
 private_message_notification:
     path: /private_message/notification/get
     controller: App\Controller\PrivateMessageController::notReaded
-   
-   
-
-    
 
 
-  
+
+
+
+
