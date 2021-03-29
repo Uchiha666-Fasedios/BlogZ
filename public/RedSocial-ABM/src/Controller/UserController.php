@@ -329,22 +329,10 @@ if (count($searched) ==1) {//es q puso una palabra
     $query,$request->query->getInt('page',1),5  //5 son los registros q se van a mostrar por pagina
     );
 
-    if (count($pagination) <1 ) {
-        $dql= 'SELECT u FROM App:User u ORDER BY u.id ASC';
-        $query= $em->createQuery($dql);
-       //$paginator=$this->get('knp_paginator');//$this->get('knp_paginator') llamo al servicio de paginacion
-       $pagination=$paginator->paginate(
-        $query,$request->query->getInt('page',1),5  //va a cargar el parametro page y si no tiene nada page carga el 1.. 5 son los registros q se van a mostrar por pagina
-        );
 
-
-    }else {
-        return $this->render('User/users.html.twig', array(
-            "pagination" => $pagination
-    ));
-    }
-
-
+    return $this->render('User/users.html.twig', array(
+        "pagination" => $pagination
+));
 
 
 
