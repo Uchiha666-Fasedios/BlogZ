@@ -329,7 +329,7 @@ if (count($searched) ==1) {//es q puso una palabra
     $query,$request->query->getInt('page',1),5  //5 son los registros q se van a mostrar por pagina
     );
 
-    if ($pagination == null || $pagination == 0) {
+    if (count($pagination) <1 ) {
         $dql= 'SELECT u FROM App:User u ORDER BY u.id ASC';
         $query= $em->createQuery($dql);
        //$paginator=$this->get('knp_paginator');//$this->get('knp_paginator') llamo al servicio de paginacion
