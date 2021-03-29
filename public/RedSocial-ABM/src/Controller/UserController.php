@@ -327,11 +327,11 @@ if (count($searched) ==1) {//es q puso una palabra
 
    //$paginator=$this->get('knp_paginator');//$this->get('knp_paginator') llamo al servicio de paginacion
    $pagination=$paginator->paginate(
-    $query,$request->query->getInt('page',1),5  //5 son los registros q se van a mostrar por pagina
+    $query,$request->query->getInt('page',1),50  //5 son los registros q se van a mostrar por pagina
     );
 
 
-    echo 'paginacion'.$pagination;
+
     return $this->render('User/users.html.twig', array(
         "pagination" => $pagination
 ));
