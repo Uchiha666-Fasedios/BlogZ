@@ -329,12 +329,13 @@ if (count($searched) ==1) {//es q puso una palabra
     $query,$request->query->getInt('page',1),5  //5 son los registros q se van a mostrar por pagina
     );
 
-if ($dql == 0 || $dql == false || $dql == null || $dql == 'undefaild' || $dql == '') {
-    return $this->redirect($this->generateURL('home_publications'));
-}else{
+if ($pagination) {
     return $this->render('User/users.html.twig', array(
         "pagination" => $pagination
 ));
+}else{
+    return $this->redirect($this->generateURL('home_publications'));
+
 }
 
 
