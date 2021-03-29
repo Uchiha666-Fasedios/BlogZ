@@ -51,7 +51,7 @@
               {#% endif %#}
 
               {#% if app.user|following(user) == false %#} {#| con este palo digo q voy a llamar al filtro following(user)(es un filtro q se creo)#}
-  
+
               <button class="btn btn-sm btn-default btn-unfollow
               {% if app.user|following(user) == false %}{#si no estamos siguiendo al usuario me ocultas el boton#}
                 hidden
@@ -63,7 +63,7 @@
                   {#% endif %#}
           </div>
 
-    
+
                {% endif %}
 {#FIN DE AGREGADO DE LA PENULTIMA CLASE#}
 
@@ -77,7 +77,7 @@
 
                <div class="bio">
               <h2>{{user.bio}} </h2>
-              
+
               </div>
 <div id='user-stats'>
 
@@ -131,7 +131,7 @@
 <a href="{{ path('user_likes', { 'nickname': app.user.nick } )}}">
 
   <span class="label-stat">
-    Me gustas
+    Me gusta
   </span>
   <span class="number-stat">
     {{user_stats.likes}}
@@ -140,14 +140,14 @@
 
 </div>
 <div class="clearfix"></div>
- 
+
 
 </div>
 
    <div id='user-publications'>
        {% for publication in pagination %}
                <div class="col-lg-12 publication-item">
-               
+
                 <div class="avatar">
 
                   {% if publication.user.image == null %}
@@ -171,7 +171,7 @@
 </p>
    <p>{{ publication.text }}</p>
 
- 
+
    {% if (publication.user.id is defined) and (publication.user.id == app.user.id) %}
      <span data-id="{{publication.id}}" class="btn-delete-pub glyphicon glyphicon-trash" aria-hidden="true"></span>
    {% endif %}
@@ -187,34 +187,34 @@
 
   <div class='pub-image'>
   <img src="{{ asset('uploads/publications/images/'~publication.image)}}"/>
-  
+
   </div>
 {% endif %}
 
 {# BOTON DE LIKES #}
 <div class="pull-right like">
 
-<span data-id="{{publication.id}}" class=" {% if app.user|liked(publication) == true %} 
+<span data-id="{{publication.id}}" class=" {% if app.user|liked(publication) == true %}
 hidden
 {% endif %}
-btn-like glyphicon glyphicon-heart-empty" aria-hidden='true' 
+btn-like glyphicon glyphicon-heart-empty" aria-hidden='true'
 data-toggle="tooltip" data-placement="bottom" title="Me gusta" > </span>
 
 {# class active lo pone rojo con hidden lo oculto #}
-<span data-id="{{publication.id}}" class=" {% if app.user|liked(publication) == false %} 
+<span data-id="{{publication.id}}" class=" {% if app.user|liked(publication) == false %}
 hidden
 {% endif %}
- btn-unlike active glyphicon glyphicon-heart-empty" aria-hidden='true' 
+ btn-unlike active glyphicon glyphicon-heart-empty" aria-hidden='true'
 data-toggle="tooltip" data-placement="bottom" title="Ya no me gusta" > </span>
 </div>
 
 {# FIN DE BOTON DE LIKES #}
 
-   </div> 
-   <div class="clearfix"> </div>  
-   <hr/>        
-               
-               </div>    
+   </div>
+   <div class="clearfix"> </div>
+   <hr/>
+
+               </div>
              {% endfor %}
 
              <div class="navigation">

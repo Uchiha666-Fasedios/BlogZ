@@ -37,9 +37,9 @@ register:
 
 user_profile:
     #path: /user/{nickname,paginator}
-    path: /user/{nickname,paginator}
+    path: /user/{nickname}
     controller: App\Controller\UserController::profile
-    defaults: {nickname: null}
+    defaults: {nickname: 'programador'}
 
 
 user_nick_test:
