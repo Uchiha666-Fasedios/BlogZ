@@ -39,7 +39,7 @@ user_profile:
     #path: /user/{nickname,paginator}
     path: /user/{nickname}
     controller: App\Controller\UserController::profile
-    defaults: {nickname: 'programador'}
+    defaults: {nickname: null}
 
 
 user_nick_test:
