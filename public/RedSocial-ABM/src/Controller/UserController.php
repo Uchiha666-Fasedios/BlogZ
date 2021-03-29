@@ -21,6 +21,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;//las uti
 
 // Include paginator interface
 use Knp\Component\Pager\PaginatorInterface;
+use PhpParser\Node\Stmt\Echo_;
 
 class UserController extends AbstractController
 {
@@ -329,14 +330,12 @@ if (count($searched) ==1) {//es q puso una palabra
     $query,$request->query->getInt('page',1),5  //5 son los registros q se van a mostrar por pagina
     );
 
-if ($pagination) {
+
+    echo 'paginacion'.$pagination;
     return $this->render('User/users.html.twig', array(
         "pagination" => $pagination
 ));
-}else{
-    return $this->redirect($this->generateURL('home_publications'));
 
-}
 
 
 
