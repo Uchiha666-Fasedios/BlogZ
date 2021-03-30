@@ -23,20 +23,7 @@
 
 
 
-           <!-- <iframe width="600" height="338" src="//www.youtube.com/embed/uifYHNyH-jA" frameborder="0" allowfullscreen></iframe>
 
-
-
-
-
-            <div class="youtube-player" data-id="6UXMKeqi9aE"></div>
-
-
-
-
-            <iframe width="600" height="338" src="{{asset('videos/video.mp4')}}" frameborder="0" allowfullscreen></iframe>
-
--->
 
 
 
