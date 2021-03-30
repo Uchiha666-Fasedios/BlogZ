@@ -26,7 +26,7 @@ class ImageController extends Controller
     //Validación
     $validate = $this->validate($request, [//este validate lo saqe de RegisterController autoHecho por laravel
       'description' => 'required',
-      'image_path'  => 'required'//|image q solo sea una imagen lo controla laravel
+      'image_path'  => 'required|image'//|image q solo sea una imagen lo controla laravel
     ]);
 
     // Recoger datos
