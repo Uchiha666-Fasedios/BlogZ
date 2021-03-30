@@ -65,7 +65,9 @@
                            <li class="nav-item">
                              <a class="nav-link" href="{{ route('image.create') }}">Subir imagen</a>
                            </li>
-
+                           <li class="nav-item">
+                            <a class="nav-link" href="{{ route('video.create') }}">Subir video</a>
+                          </li>
 
 
                            <li class="nav-item">
