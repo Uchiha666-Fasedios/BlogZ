@@ -61,6 +61,14 @@ Route::get('/image/delete/{id}', 'ImageController@delete')->name('image.delete')
 Route::get('/imagen/editar/{id}', 'ImageController@edit')->name('image.edit');
 Route::post('/image/update', 'ImageController@update')->name('image.update');
 
+//video
+Route::get('/subir-video', 'VideoController@create')->name('video.create');
+Route::post('/video/save', 'VideoController@save')->name('video.save');
+Route::get('/video/{id}', 'VideoController@detail')->name('video.detail');
+Route::get('/video/editar/{id}', 'VideoController@edit')->name('video.edit');
+Route::get('/video/delete/{id}', 'VideoController@delete')->name('video.delete');
+Route::post('/video/update', 'VideoController@update')->name('video.update');
+
 // COMENTARIO
 Route::post('/comment/save', 'CommentController@save')->name('comment.save');
 Route::get('/comment/delete/{id}', 'CommentController@delete')->name('comment.delete');
