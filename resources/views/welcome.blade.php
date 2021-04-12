@@ -53,7 +53,7 @@
                             <div class="jsNewsCard news__card" modal-id="#{{ $articulo->id }}">
                                 <div class="news__image">
 
-                                    <img class="news__img" alt="" src="{{ url('https://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">
+                                    <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">
                                 </div>
                                 <div class="news__inner">
                                     <h5 class="mbr-section-title display-6">{{ $articulo->titulo }}</h5>
@@ -79,7 +79,7 @@
                                 @if($articulo->images->first())
                                     <div class="news__image">
                                         @foreach($articulo->images as $imagen)
-                                            <img class="news__img" alt="" src="{{  url('https://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
+                                            <img class="news__img" alt="" src="{{  url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
                                         @endforeach
                                     </div>
                                 @endif

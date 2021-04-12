@@ -136,7 +136,7 @@
                     <a class="nav-link link" href="{{route('welcome')}}">INICIO</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="https://mobirise.com/" aria-expanded="false">
+                    <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="false">
                     TEMAS PRINCIPALES</a>
                     <div class="dropdown-menu" >
 
@@ -287,7 +287,7 @@
  {{-- mio --}}
 
 
- 
+
 
 
 
