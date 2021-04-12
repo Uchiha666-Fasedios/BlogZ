@@ -65,7 +65,7 @@
 				</div>
 				<hr>
 				  @foreach($articulo->images as $imagen) {{--$articulo->images obtengo la coleccion de imagenes.. este articulo tiene imagenes hace el bucle para mostrarlas --}}
-				    <img width="190px" src="{{ url('https://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">{{-- muestra la imagen --}}
+				    <img width="190px" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">{{-- muestra la imagen --}}
 				    <a href="{{ route('imagen.delete',$imagen) }}">
 				      <img style="margin-left: -26px; margin-top: -170px" width="20px" src="{{asset('imagenes/admin/eliminar.png')}}">{{-- me muestra una imagen de eliminar la crucesita--}}
 				    </a>
