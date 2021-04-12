@@ -14,9 +14,6 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    RewriteCond %{SERVER_PORT} ^443$
-    RewriteRule (.*) http://www.adrianweb.live/$1
-
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f

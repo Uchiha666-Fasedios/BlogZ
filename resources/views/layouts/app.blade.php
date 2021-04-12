@@ -16,9 +16,9 @@
   <!-- Fonts -->
 
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i">
 
   <link rel="stylesheet" href="{{ asset('assets/bootstrap-material-design-font/css/material.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/et-line-font-plugin/style.css') }}">
