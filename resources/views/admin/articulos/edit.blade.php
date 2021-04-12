@@ -60,12 +60,12 @@
 	                <label for="exampleInputPassword1">Contenido</label>
 					<textarea class="form-control" rows="5" name="contenido">{{ old('contenido',$articulo->contenido) }}</textarea>{{-- old('contenido' existe esto (existe cuando toqe boton actualizar) si no ponme esto $articulo->contenido --}}
 					<script>
-				      CKEDITOR.replace( 'contenido' );//este escrip es para q se vea los emoticones y todo eso q se puede agregar 
+				      CKEDITOR.replace( 'contenido' );//este escrip es para q se vea los emoticones y todo eso q se puede agregar
 				    </script>
 				</div>
 				<hr>
 				  @foreach($articulo->images as $imagen) {{--$articulo->images obtengo la coleccion de imagenes.. este articulo tiene imagenes hace el bucle para mostrarlas --}}
-				    <img width="190px" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">{{-- muestra la imagen --}}
+				    <img width="190px" src="{{ url('https://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">{{-- muestra la imagen --}}
 				    <a href="{{ route('imagen.delete',$imagen) }}">
 				      <img style="margin-left: -26px; margin-top: -170px" width="20px" src="{{asset('imagenes/admin/eliminar.png')}}">{{-- me muestra una imagen de eliminar la crucesita--}}
 				    </a>
