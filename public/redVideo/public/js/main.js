@@ -59,7 +59,7 @@ window.addEventListener("load", function(){
 
 });*/
 
-var url = 'http://www.adrianweb.live/redSocialLaravel/public';
+var url = 'https://www.adrianweb.live/redVideo/public';
 window.addEventListener("load", function() {
 
     $('.btn-like').css('cursor', 'pointer');
