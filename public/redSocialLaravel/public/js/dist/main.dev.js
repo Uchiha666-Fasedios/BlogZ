@@ -1,6 +1,6 @@
 "use strict";
 
-var url = 'http://localhost/blogLaravel/redsocial/public/';
+var url = 'https://www.adrianweb.live/redSocialLaravel/public';
 window.addEventListener("load", function () {
   //window.addEventListener("load" cuando carga la pagina
   $('.btn-like').css('cursor', 'pointer');
@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
 
       $.ajax({
         /*creo el objeto json */
-        url: 'http://localhost/blogLaravel/redsocial/public/like/' + $(this).data('id'),
+        url: url + '/like/' + $(this).data('id'),
         //el atributo id q toma desde la vista.. en realidad se llama data-id pero puedo cogerlo asi con data q es una funcion de javascrip q espera un id
         type: 'GET',
         //le digo q va ser por get
