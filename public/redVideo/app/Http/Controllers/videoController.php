@@ -26,8 +26,8 @@ class VideoController extends Controller
     //Validación
     $validate = $this->validate($request, [//este validate lo saqe de RegisterController autoHecho por laravel
 	  'description' => 'required',
-	  'video_path'  => 'required'//|image q solo sea una imagen lo controla laravel
-      
+	  'video_path'  => 'mimes:mp4,mov,ogg | max:20000',//|image q solo sea una imagen lo controla laravel
+
     ]);
 
     // Recoger datos
@@ -41,7 +41,7 @@ class VideoController extends Controller
     $video->description = $description;//seteo la descripcion
 
 	// Subir fichero
-	
+
 
 
 
@@ -76,7 +76,7 @@ class VideoController extends Controller
 
 
 
-	
+
 
 
 
