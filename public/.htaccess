@@ -14,7 +14,7 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # para q ande el proyecto con https
+
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} ^www\. [NC]
     RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
