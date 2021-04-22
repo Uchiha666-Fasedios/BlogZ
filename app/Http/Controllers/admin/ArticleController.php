@@ -86,7 +86,7 @@ class ArticleController extends Controller
         {
             if($request->hasFile('foto'.$i))//existe un archivo llamado foto $i q seria alguno de estos 0,1,2 si existe entro al if
             {
-               $path=$request->file('foto'.$i)->store('public/imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
+               $path=$request->file('foto'.$i)->store('imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
                $nombreImagen = collect(explode('/', $path))->last();//qeremos q coga desde la ultima barra en adelante o sea el nombre
                $extensionImagen = collect(explode('.', $path))->last();//recoge lo q hay despues del ultimo punto o sea la extencion
                $imagen = Image::make(Storage::get($path));//Storage::get($path) sacamos la imagen de donde esta.. Image::make creamos una instancia de dicha imagen un objeto
@@ -173,7 +173,7 @@ class ArticleController extends Controller
         {
             if($request->hasFile('foto'.$i))
             {
-               $path=$request->file('foto'.$i)->store('public/imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
+               $path=$request->file('foto'.$i)->store('imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
                $nombreImagen = collect(explode('/', $path))->last();//qeremos q coga desde la ultima barra en adelante o sea el nombre
                $extensionImagen = collect(explode('.', $path))->last();//recoge lo q hay despues del ultimo punto o sea la extencion
                $imagen = Image::make(Storage::get($path));//Storage::get($path) sacamos la imagen de donde esta.. Image::make creamos una instancia de dicha imagen un objeto
@@ -207,7 +207,50 @@ class ArticleController extends Controller
             Storage::disk('imagenesArticulos')->delete($imagen->nombre);//la borramos fisicamente de la carpeta
         }
         $articulo->delete();
-        $notificacion2="El articulo se ha eliminado";
-        return back()->with(compact('notificacion2'));
+        //$notificacion2="El articulo se ha eliminado";
+        //return back()->with(compact('notificacion2'));
     }
+
+
+    public function articulosDatatable()
+    {
+        //withoutGlobalScope con esto le decimos q no tenga en cuenta el globalScope creado en Articles..
+        return datatables(Article::withoutGlobalScope('activo')->with(['user','theme'])->orderBy('id','desc')->get())->toJson();//toJson esto es de la libreria q se instalo
+    }
+
+    public function eliminarTodosArticulos()
+    {
+        $articulos=Article::withoutGlobalScope('activo')->get();
+        foreach($articulos as $articulo)
+        {
+            foreach($articulo->images as $imagen)
+            {
+                // lo borramos físicamente
+                Storage::disk('public')->delete('/imagenesArticulos/'.$imagen->nombre);
+            }
+            $articulo->forceDelete();
+        }
+    }
+
+
+    public function showInputsFile($id)
+    {
+        $x=1;
+        //withoutGlobalScope con esto le decimos q no tenga en cuenta el globalScope creado en Articles.. findOrFail encuentra el articulo con tal id..
+        $articulo=Article::withoutGlobalScope('activo')->findOrFail($id);
+        if($articulo->images->count()<3){//si las imagenes son menores a 3 entro
+            echo '<p><h3>Añadir imágenes (máximo 3 imágenes por artículo)</h3></p>';
+        }
+        echo '<div class="container">';
+            for($i=3;$i>$articulo->images->count();$i--){//mientras 3 es mayor a la cantidad de imagenes
+                echo '<div style="margin-top: 20px" class="row">
+                          <div style="margin-top: 20px" class="col-1">
+                            <input type="file" name="foto'.$x.'"></input>
+                          </div>
+                      </div>';
+                $x++;
+            }
+        echo '</div>';
+    }
+
 }

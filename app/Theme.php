@@ -17,7 +17,7 @@ class Theme extends Model
     //ACLARO LOS CAMPOS Q QUIERO PARA Q SE TOMEN DE FORMA MASIVA EL EJEMPLO ESTA EN EL CONTROLADOR ACCION STORE
     protected $fillable=['nombre','destacado','suscripcion'];
 
-    public function getRouteKeyName()
+    public function getRouteKeyName()//com esto le digo q me traiga solo el slug cuando llamo a tema atravez de un nombre de ruta en app.blade se puso esto {{route('tema.show', $tema)}} q tiene q ver con este metodo (q todo esto es para q no se vea en la url todo el objeto tema q solo se vea el slug)
     {
 
         return 'slug';
@@ -26,7 +26,7 @@ class Theme extends Model
 
 ////////////////////////////////////////////////////////////////////
 
-    // Relación de Muchos a Uno
+    // Relación de one-to-one
 
   public function user(){
     return $this->belongsTo('App\User', 'user_id');

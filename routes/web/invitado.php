@@ -7,5 +7,5 @@ Route::get('/buscador','SearchController@index')->name('buscador.index'); // art
 Route::get('/sobremi', 'WelcomeController@sobremi')->name('sobremi');
 Route::get('/contacto', 'WelcomeController@contacto')->name('contacto');
 // Rutas invitados axios
-Route::get('/comprobar-alias-js/{alias?}','auth\RegisterController@comprobarAlias');//? es porqe si al input lo pone vacio le pasa un valor nulo
+Route::get('/comprobar-alias-js/{alias?}','auth\RegisterController@comprobarAlias');//? es q viene algo por defecto para q no de error cuando este vacio por si el usuario no pone nada
 Route::get('/buscador-predictivo','SearchController@buscadorPredictivo');

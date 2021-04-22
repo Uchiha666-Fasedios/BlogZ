@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"><!-- str_replace('_', '-', app()->getLocale()) }} esto es de config/app la parte de locale coge esa variable en este caso.. es-->
 <head>
   <!-- Site made with Mobirise Website Builder v4.8.1, https://mobirise.com -->
 
@@ -16,9 +16,9 @@
   <!-- Fonts -->
 
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i">
 
   <link rel="stylesheet" href="{{ asset('assets/bootstrap-material-design-font/css/material.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/et-line-font-plugin/style.css') }}">
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}" type="text/css">
     <link rel="stylesheet" href = "{{ asset('assets/wowslider-init/twist/style.css') }}">
    <link rel="stylesheet" type="text/css" href="{{ asset('css/buscador-predictivo.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/preloader.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/preloader.css') }}">{{--cargo la imagen de carga--}}
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 
@@ -47,8 +47,12 @@
 <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">{{--esto es mio no es del curso--}}
     {{-- mio --}}
 
-
-
+{{--esto es para el gif de los comentrios LO OCULTAMOS---}}
+<style>
+      .loading {
+        display: none;
+      }
+    </style>
 
 
 </head>
@@ -136,7 +140,7 @@
                     <a class="nav-link link" href="{{route('welcome')}}">INICIO</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="false">
+                    <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="https://mobirise.com/" aria-expanded="false">
                     TEMAS PRINCIPALES</a>
                     <div class="dropdown-menu" >
 
@@ -173,7 +177,7 @@
                             <li class="nav-item">
                                 <a class="nav-link link" href="#" data-toggle="modal" data-target="#loginModal">{{ __('Login') }}</a><!--se utiliza __ para no tener q hacer las traducciones y lo hace laravel automaticamente-->
                             </li>
-                            @if (Route::has('register'))
+                            @if (Route::has('register')){{-- si existe una  ruta llamada register --}}
                                 <li class="nav-item">
                                     <a class="nav-link link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
@@ -234,7 +238,7 @@
 
 
 
-@yield('content')
+@yield('content'){{-- aca mestro todo lo de lA @section de welcome y la de errors/403etc..--}}
 
 
 
@@ -278,10 +282,6 @@
 
 
 
-
-
-
-
   {{-- mio --}}
   <script src="{{ asset('js/app.js') }}"></script>
  {{-- mio --}}
@@ -293,6 +293,7 @@
 
  @yield('comprobar-alias-js')  {{--esto solo lo utiliza la vista del registro .lo incluimos aqui porqe esto necesita del script q esta arriba --}}
  @yield('include-login-modal') {{-- estoy invocando a la section de welcome.blade.php --}}
+ @yield('comentarios-js') {{-- estoy invocando a la section de \views\tema\articulos.blade.php --}}
 
   <input name="animation" type="hidden">
    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>

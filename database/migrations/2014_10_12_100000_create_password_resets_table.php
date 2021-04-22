@@ -14,7 +14,7 @@ class CreatePasswordResetsTable extends Migration
     public function up()
     {
         Schema::create('password_resets', function (Blueprint $table) {
-            $table->string('email')->index();
+            $table->string('email')->index();//index()Es la forma de decirle a Laravel Migration que agregue índices a esa columna, para obtener resultados más rápidos al buscar en esa columna en particular.se le va a agregar una llave foranea porqe es un campo de busqeda
             $table->string('token');
             $table->timestamp('created_at')->nullable();
         });

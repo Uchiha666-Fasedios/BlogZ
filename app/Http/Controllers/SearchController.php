@@ -115,7 +115,7 @@ class SearchController extends Controller
 
     public function buscadorPredictivo()
     {   
-        $articulos=Article::pluck('titulo');
+        $articulos=Article::pluck('titulo');//me trae todos los articulos solo los titulos si ponia all me traia la coleccion pero yo solo qiero los titulos por eso pluck 
         return $articulos;
     }
 }

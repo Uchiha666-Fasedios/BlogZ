@@ -52,6 +52,12 @@ public function images()
 }
 
 
+// $article->commentaries
+public function commentaries()
+{//uno a muchos
+    return $this->hasMany(Commentary::class);//un articulo puede tener muchos comentarios
+}
+
 public function imagenDestacada()
     {
         $imagenDestacada=$this->images->first();//this refiere a articulo porqe este metodo lo invoco desde la vista articulos.blade.php y el metodo images sin () porqe es una coleccion ya creda desde el controlador de theme entonces estando en el articulo actual cogeme la primera imagen
@@ -69,7 +75,7 @@ public function imagenDestacada()
     }
 
     //CON ESTO YA NO NECESITO scopeArticulosActivos YA LO CONVERTI EN PROPIA DEL SISTEMA NI LA TENGO Q INVOCAR A scopeArticulosActivos
-    protected static function boot()
+    protected static function boot()//se hace global de esta manera
     {
         parent::boot();
         static::addGlobalScope('activo', function ($query) {

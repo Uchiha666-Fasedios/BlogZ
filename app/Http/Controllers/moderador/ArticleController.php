@@ -143,7 +143,7 @@ class ArticleController extends Controller
     {
         //withoutGlobalScope con esto le decimos q no tenga en cuenta el globalScope creado en Articles..findOrFail encuentra el articulo con tal id y OrFail se pone por se le estamos pasando un id de un articulo q no existe
         $articulo=Article::withoutGlobalScope('activo')->findOrFail($id);
-        $this->authorize('update',$articulo); //ESTO ES LA POLITICA HECHA EN App/Policies/ArticlePolicy.php ..view HACE REFERENCIA A EL METODO Q ESTA AHI Y articulo BUE al articulo q estoy pasando
+        $this->authorize('update',$articulo); //ESTO ES LA POLITICA HECHA EN App/Policies/ArticlePolicy.php ..update HACE REFERENCIA A EL METODO Q ESTA AHI Y articulo BUE al articulo q estoy pasando
         $messages=[
             'titulo.required'=>'El campo Título no puede quedar vacio',
             'titulo.unique'=>'El Título de este articulo ya existe',

@@ -10,11 +10,11 @@
     <meta name="description" content="">
     <title>@yield('title','Administración')</title>
     <!-- Fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i">
 
-    <link rel="stylesheet" href="{{ asset('assets/bootstrap-material-design-font/css/material.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap-material-design-font/css/material.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/et-line-font-plugin/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/tether/tether.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
@@ -26,11 +26,18 @@
     <link rel="stylesheet" href="{{ asset('assets/wowslider-init/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}" type="text/css">
     <link rel="stylesheet" href = "{{ asset('assets/wowslider-init/twist/style.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ asset('css/buscador-predictivo.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/preloader.css') }}">{{--cargo la imagen de carga--}}
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">{{-- para las animaciones es un cnn q se encuentra aca https://animate.style/ --}}
+@yield('articulos-css'){{--es el css de las tostadas --}}
+@yield('slider-drop-zone-css'){{-- es el css de las imagenes del slider --}}
 
-    {{-- mio --}}
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">{{--esto es mio no es del curso--}}
-    {{-- mio --}}
+{{--esto es para el gif de los comentrios LO OCULTAMOS--}}
+<style>
+      .loading {
+        display: none;
+      }
+    </style>
 
 </head>
 
@@ -60,6 +67,9 @@
                       <li class="nav-item">
                           <a class="nav-link link" href="{{url('/')}}" aria-expanded="false">Blog</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link link" href="{{url('/admin/slider')}}" aria-expanded="false">Slider</a>
+                    </li>
                       <li class="nav-item">
                           <a class="nav-link link" href="{{route('temas.index')}}" aria-expanded="false">Temas</a>
                       </li>
@@ -124,18 +134,45 @@
 </footer>
 
 <script src="{{ asset('assets/web/assets/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/tether/tether.min.js') }}"></script>
-<script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/viewport-checker/jquery.viewportchecker.js') }}"></script>
-<script src="{{ asset('assets/smooth-scroll/smooth-scroll.js') }}"></script>
-<script src="{{ asset('assets/cookies-alert-plugin/cookies-alert-core.js') }}"></script>
-<script src="{{ asset('assets/cookies-alert-plugin/cookies-alert-script.js') }}"></script>
-<script src="{{ asset('assets/dropdown/js/script.min.js') }}"></script>
-<script src="{{ asset('assets/touch-swipe/jquery.touch-swipe.min.js') }}"></script>
-<script src="{{ asset('assets/wowslider-plugin/wowslider.js') }}"></script>
-<script src="{{ asset('assets/theme/js/script.js') }}"></script>
-<script src="{{ asset('assets/wowslider-effect/effects.js') }}"></script>
-<script src="{{ asset('assets/wowslider-init/script.js') }}"></script>
+
+{{--nuevo (para la ventana3 de jquery)--}}
+<link rel="stylesheet" href="{{ asset('jss/jquery-ui/jquery-ui.min.css') }}" /><!--estylos css de ui va antes de los metodos-->
+<link rel="stylesheet" href="{{ asset('jss/jquery-ui/jquery-ui.structure.min.css') }}" /><!--estylos css de ui va antes de los metodos-->
+<link rel="stylesheet" href="{{ asset('jss/jquery-ui/jquery-ui.theme.min.css') }}" /><!--estylos css de ui va antes de los metodos-->
+<script type="text/javascript" src="{{ asset('jss/jquery-ui/jquery-ui.min.js') }}"></script><!--cargo los metodos de JQUERY UI-->
+{{--fin nuevo--}}
+
+
+
+  <script src="{{ asset('assets/tether/tether.min.js') }}"></script>
+  <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('assets/viewport-checker/jquery.viewportchecker.js') }}"></script>
+  <script src="{{ asset('assets/smooth-scroll/smooth-scroll.js') }}"></script>
+  <script src="{{ asset('assets/cookies-alert-plugin/cookies-alert-core.js') }}"></script>
+  <script src="{{ asset('assets/cookies-alert-plugin/cookies-alert-script.js') }}"></script>
+  <script src="{{ asset('assets/dropdown/js/script.min.js') }}"></script>
+  <script src="{{ asset('assets/touch-swipe/jquery.touch-swipe.min.js') }}"></script>
+  <script src="{{ asset('assets/wowslider-plugin/wowslider.js') }}"></script>
+  <script src="{{ asset('assets/theme/js/script.js') }}"></script>
+  <script src="{{ asset('assets/wowslider-effect/effects.js') }}"></script>
+  <script src="{{ asset('assets/wowslider-init/script.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.bundle.min.js"></script>{{-- libreria para q se desplege en elbuscador dicha caja de busqeda --}}
+<script src="{{ asset('js/buscador-predictivo.js') }}"></script>
+<script src="{{ asset('js/preloader.js') }}"></script>{{--para q ande la imagen de la carga--}}
+
+
+
+
+  {{-- mio --}}
+  <script src="{{ asset('js/app.js') }}"></script>
+ {{-- mio --}}
+
+@yield('articulos-js') {{-- es el codigo de eliminacion con axios esta en resources\views\admin\articulos\index.blade.php lo invoco de aca porqe necesito algunos script q estan aca--}}
+@yield('eliminar-img-js') {{-- es el codigo de eliminacion de imagenes con axios esta en resources\views\admin\articulos\edit.blade.php lo invoco de aca porqe necesito algunos script q estan aca--}}
+@yield('slider-drop-zone-js') {{-- es el codigo de las imagenes del slider para poder colocarlas eliminarlas etc.. resources\views\admin\slider.blade.php lo invoco de aca porqe necesito algunos script q estan aca--}}
+@yield('comentarios-js') {{-- estoy invocando a la section de \views\tema\articulos.blade.php --}}
+
+
 
 
 <input name="animation" type="hidden">

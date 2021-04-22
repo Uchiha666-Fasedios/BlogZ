@@ -65,17 +65,21 @@
 				</div>
 				<hr>
 				  @foreach($articulo->images as $imagen) {{--$articulo->images obtengo la coleccion de imagenes.. este articulo tiene imagenes hace el bucle para mostrarlas --}}
-				    <img width="190px" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">{{-- muestra la imagen --}}
-				    <a href="{{ route('imagen.delete',$imagen) }}">
-				      <img style="margin-left: -26px; margin-top: -170px" width="20px" src="{{asset('imagenes/admin/eliminar.png')}}">{{-- me muestra una imagen de eliminar la crucesita--}}
-				    </a>
+                  <div class="padre" id="{{ $imagen->id }}" style="float:left;">
+                  <img width="190px" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">{{-- muestra la imagen --}}
+				    {{--<a href="{{ route('imagen.delete',$imagen) }}"> --}}
+                        <img class="hijo" style="cursor:pointer; margin-left: -20px; margin-top: -170px" width="20px" src="{{asset('imagenes/admin/eliminar.png')}}">{{-- me muestra una imagen de eliminar la crucesita--}}
+				    {{-- </a> --}}
+                </div>
 				@endforeach
-				@if($articulo->images->count()<3){{--$articulo->images no le pongo () porqe haria una consulta a la base de datos y gasto recursos para q si ya tengo la coleccion q es como una bolsa q voy metiendo cosas.. entonce si las imagenes q tengo son menores a tres entro al if --}}
-				    <p><h3>Añadir imágenes (máximo 3 imágenes por artículo)</h3></p>
+                <div style="clear: both;"></div>{{-- esto es por el float left si no da conflicto en el borrado --}}
+                <div id="contenido" articulo="{{ $articulo->id }}">asa</div> {{-- ESTO ES PARA USAR JAVASCRIP  --}}
+                {{-- 	@if($articulo->images->count()<3){{--$articulo->images no le pongo () porqe haria una consulta a la base de datos y gasto recursos para q si ya tengo la coleccion q es como una bolsa q voy metiendo cosas.. entonce si las imagenes q tengo son menores a tres entro al if --}}
+               {{-- <p><h3>Añadir imágenes (máximo 3 imágenes por artículo)</h3></p>
                 @endif
 
                 {{--si las imagenes q tiene este articulo son menores a 3.. me muestra las veces q faltan para q elijir imagen--}}
-				  <div class="container">
+				 {{-- <div class="container">
 				     @for($i=3;$i>$articulo->images->count();$i--)
 				        <div style="margin-top: 20px" class="row">
                           <div style="margin-top: 20px" class="col-1">
@@ -84,11 +88,46 @@
 				          </div>
 				        </div>
 				     @endfor
-				  </div>
+				  </div> --}}
 				<hr>
 	            <button type="submit" class="btn btn-info btn-sm">Actualizar</button>
 	        </div>
 	    </div>
 	</div>
 </form>
+@endsection
+
+
+{{-- MAGIA CON AXIOS --}}
+{{-- ESTA SECTION LA LLAMO DE \layouts\appAdmin.blade.php PORQE NECESITO LOS SCRIPT DE AHI--}}
+@section('eliminar-img-js')
+	<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    {{-- USO DE AXIOS ,JAVASCRIP y JQUERY --}}
+    <script>
+		var contenido = document.getElementById("contenido");//tomo el elemento
+		var articulo = $('#contenido').attr("articulo");//cojo el id del articulo
+		function showInputsFile(articulo,contenido){//una FUNCION con parametros
+			axios.get('/admin/inputs-file/' + articulo,{responseType:'text'}).then(response => {//admin/inputs-file/ me lleva al controlador \Controllers\admin\ArticleController.php ..responseType:'text' recibo una respuesta de tipo texto (q son los div de un bucle con los input tipo file para q se vean en la parte de las imagenes si falta alguna imagen por agregar te muestra este file)
+	        contenido.innerHTML=response.data;//metes la respuesta (q son los div de un bucle con los input tipo file) en el elemento(contenido)
+		    }).catch(error => {
+		        console.log(error);
+		    });
+		}
+        /* ELIMINAR IMAGENES CON AXIOS */
+		$(document).ready(function() {
+			showInputsFile(articulo,contenido);//llamo a la FUNCION q esta ahi \Controllers\admin\ArticleController.php
+			$('.hijo').click(function(){//tomamos la imagen y con el evento clik en ella pasa lo siguiente
+				var id = $(this).parent().attr('id');//this hace referencia a .hijo y con .parent() hace referencia al padre q seria el div y con attr(id) agarro al id ..si quiero hacer referencia al padre del padre o sea el abuelo pongo .parent().parent()
+				var url='/admin/imagenes/'+ id;//esta me llva a \Controllers\admin\ArticleImageController.php
+	            axios.delete(url).then(response =>{ //eliminamos
+	            	$(this).parent().addClass("hinge"); // Eliminar con efecto gracias a el link q puse aca layouts\appAdmin.blade.php
+	            	$(this).parent().fadeOut(2000);	   // El efecto fadeOut() oculta un elemento variando su opacidad, Esto es para q no vuelva a aparecer la imagen .. gracias a el link q puse aca layouts\appAdmin.blade.php
+	            }).catch(error => {
+	            	alert(error);
+	            });
+	            showInputsFile(articulo,contenido);//llamo a la FUNCION q esta ahi \Controllers\admin\ArticleController.php
+			});
+		});
+	</script>
 @endsection

@@ -16,7 +16,7 @@ class CreateThemesTable extends Migration
         Schema::create('themes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id')->default(1);//unsignedBigInteger se va crear un int q no permite negativos el campo se va llamar user_id y por defecto va tener 1
-            $table->foreign('user_id')->references('id')->on('users');//el user_id creado va ser una llave foranea y va ser referencia a el id de la tabla users
+            $table->foreign('user_id')->references('id')->on('users');//el user_id user hace referencia ala tabla user y el id al cmpo id.. esto va ser una llave foranea y va ser referencia a el id de la tabla users
             $table->string('nombre');
             $table->string('slug')->index()->unique();//index()Es la forma de decirle a Laravel Migration que agregue índices a esa columna, para obtener resultados más rápidos al buscar en esa columna en particular.se le va a agregar una llave foranea porqe es un campo de busqeda
             $table->boolean('destacado')->default(false);

@@ -22,7 +22,7 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-
+//para llegar a este use me posisiono en el copio la ruta luego presiono contrl+p y pongo la ruta
     use RegistersUsers; //aca esta el metodo q muestra la vista del registro y la ruta esta en vendor se tuvo q tocar para pasarle la variable con los themas pero despues se paso la variable de otra manera mejor..
 
     //ESTA FUNCION LA SAQE DE RegistersUsers Q ESTA EN EL VENDOR Y LE PUSE LOGICA
@@ -52,8 +52,8 @@ class RegisterController extends Controller
     {
         $alias=User::where('alias',$alias)->first();//si ay alguno en la tabla con ese alias cogelo
         if($alias)
-            return json_encode(true);//retorna true
-        return json_encode(false);
+            return json_encode(true);//retorna true .. json_encode para no poner "true"
+        return json_encode(false);//si no false no hace falta el else
     }
 
     protected function validator(array $data)
@@ -82,6 +82,8 @@ class RegisterController extends Controller
         );
         /* mio */
 //este return es lo q trae laravel por defecto
+//unique:users q sea unico y va buscar en la tabla users
+//confirmed es q los campos de la password sean iguales
         return Validator::make($data, [
             'name' => 'required|string|max:190',
             'email' => 'required|string|email|max:190|unique:users',

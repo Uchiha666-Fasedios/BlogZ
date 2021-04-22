@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-header">{{ __('registro-formulario.Register') }}</div>
 
-                {{-- mio validar --}}
+                {{-- mio validar ACA ME MUESTRA TODOS LOS ERRORES Q SE GENERARON ACA ARRIBA .. los errores vienen de registerController validator--}}
                     @if($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -30,13 +30,13 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
-                        @csrf
+                        @csrf  {{-- esto se le pone a los formularios es un token para seguridad--}}
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('registro-formulario.Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('registro-formulario.Name') }}</label>{{-- __('registro-formulario.Name') esto es la traduccion q nos permite hacer laravel resources/lang/es y en config/app en locale puse es q es la validacion de espaniol--}}
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}"  autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}"  autocomplete="name" autofocus>{{-- old ES PARA Q CUANDO ALLA ERRORES Y VUELVA A cargar la pagina se recuerde en este campo lo q habia puesto el usuario --}}
 
 
 
@@ -154,18 +154,18 @@
 
 
 
-
-@section('comprobar-alias-js')
+{{--creo esta section para invocarla en el layaut porqe se necesita el jquery y el css q esta invocado en el layout--}}
+@section('comprobar-alias-js') 
     <script>
         var coincidenciaAlias= false;
         var alias;
         var password1;
         var password2;
-        $(document).ready(function(){
+        $(document).ready(function(){//mientras se recarga la pagina hago lo siguiente
             $('#alias').keyup(function(){//keyup evento cuando levantamos la tecla
                 alias=$(this).val();//se coge el valor del input
-                var urlComprobarAlias = '/comprobar-alias-js/' + alias;
-                ajax.get(urlComprobarAlias)//axios es como ajax ..recibo la variable
+                var urlComprobarAlias = './comprobar-alias-js/'+alias;
+                axios.get(urlComprobarAlias)//axios es como ajax ..recibo la variable
                 .then(response => {//aca va la respuesta positiva
                     coincidenciaAlias = response.data;//guardamos la respuesta .. va ser un true o un false
                     if(coincidenciaAlias){//si es true
@@ -180,20 +180,20 @@
                 })
             });
 
-            $('#password').click(function(){
-                $('#password-alert').show('slow');
+            $('#password').click(function(){//hago clik en el input
+                $('#password-alert').show('slow');//y me muestra el elemento
             });
 
-            $('#password-confirm').click(function(){
-                password1=$('#password').val();
+            $('#password-confirm').click(function(){//hago clik en el input del password de confirmacion
+                password1=$('#password').val();//toma el valor del input del password
             });
 
-            $('#password-confirm').keyup(function(){
-                password2=$('#password-confirm').val();
-                if(password1!=password2){
-                    $('#password-confirm-alert').show('slow');
+            $('#password-confirm').keyup(function(){//saco la tecla del input del password de confirmacion
+                password2=$('#password-confirm').val();//toma el valor
+                if(password1!=password2){//si son diferentes
+                    $('#password-confirm-alert').show('slow');//me muestra el cartel
                 }else{
-                    $('#password-confirm-alert').hide('slow');
+                    $('#password-confirm-alert').hide('slow');//si no lo esconde
                 }
             });
         });

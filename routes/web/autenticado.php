@@ -5,3 +5,6 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('verified'
 Route::put('/usuario-actualizar', 'UserController@update')->name('usuario.update');
 //middleware: laravel tiene unos middleware por defectos en app/Htpp/Middleware.php ahi esta por ejemplo el de Authenticate q me redirecciona si no estoy autenticado
 //auth es un alias para usar este middleware por ejemplo este alias se crea en app/Htpp/Kernel.php
+Route::delete('comentario-borrar/{id_comentario}','CommentaryController@destroyAxios');
+Route::post('comentario-aniadir','CommentaryController@storeAxios');
+Route::get('comentarios-mostrar/{articulo_id}','CommentaryController@comentariosMostrarAxios');

@@ -52,21 +52,28 @@ public function themes(){
       return $this->hasMany('App\Article');
   }
 
-  //relacion de muchos a muchos
+  //relacion de  many-to-many
   public function roles()
     {
         return $this->belongsToMany(Role::class)->withTimestamps();
     }
 
-  //ACCESOS
+
+    // $user->commentaries
+    public function commentaries()
+    {//uno a muchos
+        return $this->hasMany(Commentary::class);//un usuario puede tener muchos comentarios
+    }
+
+  //ACCESOS el caMBIO LO HACE AUTOMATICAMRENTE  NO HACE FALTA INVOCARLO
   //estoy creando un ACCESO q es para poner en una vista en este caso mayuscula dicho campo de dicha tabla
      /* public function getNameAttribute($valor)//tengo q poner get siempre y Name porqe tiene q coincidir con el nombre del campo en la tabla q quiero cambiar va eso creo
     {
         return ucfirst(strtolower($valor));//ucfirst me transforma la primera en mayuscula ..strtolower con esto me tranforma las demas en minuscula
     }*/
 
-    //MUTADORES
-    //lo mismo q accesos pero este ya lomete bien a la tabla con mayuscula la primera el otro solo la muestra
+    //MUTADORES el caMBIO LO HACE AUTOMATICAMRENTE  NO HACE FALTA INVOCARLO
+    //lo mismo q accesos pero este ya lo mete bien a la tabla con mayuscula la primera el otro solo la muestra
     public function setNameAttribute($value)
     {
         $this->attributes['name']=ucfirst(mb_strtolower($value,'UTF-8'));//'UTF-8' ESTO LO METO PORQE SI NO DA ERROR
@@ -94,7 +101,7 @@ public function themes(){
     public function hasRole($role) //recibe el rol
     {
         //$roles=$this->roles()->get(); //esto gasta mas recurso get() se hace en los controladores en los modelos ya los tenemos aqui seria como coleccion ya no hace falta ()
-        $roles=$this->roles; //cogemos todos los roles
+        $roles=$this->roles; //cogemos todos los roles del usuario
             foreach ($roles as $suRole)//hago el bucle con los roles
             {
                 if($suRole->nombre==$role)  // le voy preguntando si son iguales los roles

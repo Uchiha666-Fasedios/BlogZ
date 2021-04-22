@@ -15,7 +15,7 @@ class ArticleImageController extends Controller
         Storage::disk('imagenesArticulos')->delete($imagen->nombre);//la borramos fisicamente de la carpeta
         //$imagen->forceDelete();//la borramos de la tabla
         $imagen->delete();//la borramos de la tabla
-        $notificacion="Imágen eliminada correctamente correctamente";
-        return back()->with(compact('notificacion'));//back va para atras
+       // $notificacion="Imágen eliminada correctamente correctamente";
+       // return back()->with(compact('notificacion'));//back va para atras
     }
 }
