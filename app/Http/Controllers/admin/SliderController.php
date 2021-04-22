@@ -108,7 +108,7 @@ class SliderController extends Controller
         {//Storage::url('imagenesSlider/'.$imagen->nombre) sacamos de la carpeta de las imagenes la imagen para q se muestre
             //onclick="eliminarImagen('.$imagen->id.') le doy clik a eliminar y ejecuto tal funcion
             echo    '<div style="cursor:move;border: solid 1px; margin-top: 2px; padding: 0" class="col-xs-6 col-xs-offset-3 imagen" id="'.$imagen->orden.'">
-                        <img class="mover" width="100px" src="'.url('http://localhost/blogZ/storage/app/public/imagenesSlider/'.$imagen->nombre).'">
+                        <img class="mover" width="100px" src="'.url('http://www.adrianweb.live/storage/app/public/imagenesSlider/'.$imagen->nombre).'">
                         <img style="cursor: pointer; float: right; margin: 8px 8px 0px 0px" width="20px" onclick="eliminarImagen('.$imagen->id.')" src="'.asset('imagenes/admin/eliminar.png').'">
                     </div>';
         }
