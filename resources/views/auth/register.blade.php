@@ -155,7 +155,7 @@
 
 
 {{--creo esta section para invocarla en el layaut porqe se necesita el jquery y el css q esta invocado en el layout--}}
-@section('comprobar-alias-js') 
+@section('comprobar-alias-js')
     <script>
         var coincidenciaAlias= false;
         var alias;
@@ -164,7 +164,7 @@
         $(document).ready(function(){//mientras se recarga la pagina hago lo siguiente
             $('#alias').keyup(function(){//keyup evento cuando levantamos la tecla
                 alias=$(this).val();//se coge el valor del input
-                var urlComprobarAlias = './comprobar-alias-js/'+alias;
+                var urlComprobarAlias = '/comprobar-alias-js/'+alias;
                 axios.get(urlComprobarAlias)//axios es como ajax ..recibo la variable
                 .then(response => {//aca va la respuesta positiva
                     coincidenciaAlias = response.data;//guardamos la respuesta .. va ser un true o un false

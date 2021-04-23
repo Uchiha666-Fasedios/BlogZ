@@ -18,10 +18,11 @@
         "laravel/framework": "^6.18.35",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.2",
-        "laraveles/spanish": "^1.5"
+        "laraveles/spanish": "^1.5",
+        "yajra/laravel-datatables-oracle": "^9.18"
     },
     "require-dev": {
-        
+
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.9.1",
         "mmo/faker-images": "^0.2.0",
