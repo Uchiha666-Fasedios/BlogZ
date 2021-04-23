@@ -86,7 +86,7 @@ class ArticleController extends Controller
         {
             if($request->hasFile('foto'.$i))//existe un archivo llamado foto $i q seria alguno de estos 0,1,2 si existe entro al if
             {
-               $path=$request->file('foto'.$i)->store('imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
+               $path=$request->file('foto'.$i)->store('public/imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
                $nombreImagen = collect(explode('/', $path))->last();//qeremos q coga desde la ultima barra en adelante o sea el nombre
                $extensionImagen = collect(explode('.', $path))->last();//recoge lo q hay despues del ultimo punto o sea la extencion
                $imagen = Image::make(Storage::get($path));//Storage::get($path) sacamos la imagen de donde esta.. Image::make creamos una instancia de dicha imagen un objeto
@@ -173,7 +173,7 @@ class ArticleController extends Controller
         {
             if($request->hasFile('foto'.$i))
             {
-               $path=$request->file('foto'.$i)->store('imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
+               $path=$request->file('foto'.$i)->store('public/imagenesArticulos');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa store/public/imagenesArticulos y guardo la ruta en la variable
                $nombreImagen = collect(explode('/', $path))->last();//qeremos q coga desde la ultima barra en adelante o sea el nombre
                $extensionImagen = collect(explode('.', $path))->last();//recoge lo q hay despues del ultimo punto o sea la extencion
                $imagen = Image::make(Storage::get($path));//Storage::get($path) sacamos la imagen de donde esta.. Image::make creamos una instancia de dicha imagen un objeto
