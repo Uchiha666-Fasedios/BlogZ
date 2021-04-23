@@ -39,7 +39,7 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        $path=$request->file('file')->store('imagenesSlider');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa /public/imagenesSlider y guardo la ruta en la variable
+        $path=$request->file('file')->store('public/imagenesSlider');//->store metodo para guardar archivo SOLAMENTE si viene del input guardo el archivo en la direccion esa /public/imagenesSlider y guardo la ruta en la variable
         $nombreImagen = collect(explode('/', $path))->last();//qeremos q coga desde la ultima barra en adelante o sea el nombre
         $extensionImagen = collect(explode('.', $path))->last();//recoge lo q hay despues del ultimo punto o sea la extencion
         $imagen = Image::make(Storage::get($path));//Storage::get($path) sacamos la imagen de donde esta.. Image::make creamos una instancia de dicha imagen un objeto
@@ -108,7 +108,7 @@ class SliderController extends Controller
         {//Storage::url('imagenesSlider/'.$imagen->nombre) sacamos de la carpeta de las imagenes la imagen para q se muestre
             //onclick="eliminarImagen('.$imagen->id.') le doy clik a eliminar y ejecuto tal funcion
             echo    '<div style="cursor:move;border: solid 1px; margin-top: 2px; padding: 0" class="col-xs-6 col-xs-offset-3 imagen" id="'.$imagen->orden.'">
-                        <img class="mover" width="100px" src="'.url('http://www.adrianweb.live/storage/app/public/imagenesSlider/'.$imagen->nombre).'">
+                        <img class="mover" width="100px" src="'.url('http://www.adrianweb.live/storage/imagenesSlider/'.$imagen->nombre).'">
                         <img style="cursor: pointer; float: right; margin: 8px 8px 0px 0px" width="20px" onclick="eliminarImagen('.$imagen->id.')" src="'.asset('imagenes/admin/eliminar.png').'">
                     </div>';
         }

@@ -14,7 +14,7 @@
             <ul>
                 @foreach($imagenes->sortBy('orden') as $imagen)
                 <li>
-                    <img src="{{ url('http://www.adrianweb.live/storage/app/public/imagenesSlider/'.$imagen->nombre) }}">
+                    <img src="{{ url('http://www.adrianweb.live/storage/imagenesSlider/'.$imagen->nombre) }}">
                 </li>
             @endforeach
 
