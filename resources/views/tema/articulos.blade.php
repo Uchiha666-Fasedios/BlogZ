@@ -97,7 +97,34 @@
                                 </a>
 
                             </div>
-
+{{-- Comentarios --}}
+<div class="news__inner">
+    <strong>COMENTARIOS : </strong>
+{{--este enlace solo aparece a los autenticados--}}  @auth<a href="#" class="nuevo-comentario">Escribir un nuevo comentario</a>
+{{--si no esta autenticado le aparece este--}}   @else <a href="{{ route('register') }}">Debes registrarte para escribir comentarios</a>
+                         @endauth
+    <div id="error-enviar-comentario{{ $articulo->id }}" class="bg-danger" style="display: none; padding: 4px">El comentario no puede quedar vacio</div>
+    <div id="success-enviar-comentario{{ $articulo->id }}" class="bg-success" style="display: none; padding: 4px">Comentario añadido con Éxito</div>
+    {{--caja del formulario del comentario--}}
+    <div id="caja-comentario{{ $articulo->id }}" class="caja-comentario" style="display: none; margin-top: 15px">
+        <form method="POST" articulo="{{ $articulo->id }}">
+            <label> Caracteres restantes: <span></span></label>{{--esto tambien es parte del contador de caracteres cogido del internet--}}
+            <textarea style="width:100%; height:150px" maxlength="500"></textarea>
+            <button class="enviar-comentario" type="submit">Enviar</button>
+        </form>
+    </div>
+    {{--cierre de caja --}}
+</div>
+<div class="loading" id="loading{{ $articulo->id }}">{{--esto es para la imagen gif--}}
+    <img width="120px" src="{{asset('imagenes/loading.gif')}}">{{--en principio esta oculto desde la vista layout app pero cuando toco enviar en el formulario la desocultamos--}}
+</div>
+<div class="news__inner">
+    <a href="#" class="comentarios-ver" articulo="{{ $articulo->id }}">Ver Comentarios</a>
+</div>
+<div class="comentarios-mostrar" id="comentarios{{ $articulo->id }}">
+    {{-- Aquí se van a mostrar todos los comentarios del articulo. Lo que está abajo comentado --}}
+</div>
+{{-- Comentarios --}}
 
                         </div>
 
@@ -130,6 +157,91 @@
         @endif
 
 </section>
+
+
+{{--------------------------------------------}}
+
+@section('comentarios-js')
+	<script>
+		function eliminarComentario(comentario_id){
+			var url='/comentario-borrar/'+ comentario_id;
+            axios.delete(url).then(response =>{ //eliminamos
+            	$('#'+comentario_id).addClass("animated zoomOutRight");     // Eliminar con efecto
+            	$('#'+comentario_id).fadeOut(1000);	   // Eliminar con efecto
+            }).catch(error => {
+            	alert(error);
+            });
+		}
+
+		$(document).ready(function() {//CARGA EL ARCHIVO
+			// Hace aparecer la caja del comentario
+			$('.nuevo-comentario').click(function(){//HAGO CLICK EN el enlace de la linea 96 por ahi
+				$(this).siblings('.caja-comentario').toggle('fast');//siblings para agarrar al hermano con esta clase .caja-comentario (los hermanos son los q estan en el mismo nivel) . togglepara q abra y cierra
+			});
+
+			// Mostrar Comentario
+			$('.comentarios-ver').click(function(){
+				var articulo_id=$(this).attr('articulo');
+			    var comentariosMostrar = document.getElementById('comentarios'+articulo_id);
+	            axios.get('/comentarios-mostrar/' + articulo_id,{responseType:'text'}).then(response => {
+		        	comentariosMostrar.innerHTML = response.data;
+			    }).catch(error => {
+			        console.log(error);
+			    });
+			});
+
+			// Enviar comentario
+			$('.enviar-comentario').click(function(e){//hace clik en el boton de enviar comentario
+		    	e.preventDefault();	// Para que la página no se actualice ya que la acción se realiza dentro de un formulario.
+		    	var articulo_id = $(this).parents('form').attr('articulo');//enviar-comentario ese elemento tiene un padre q es form de ahi agarra articulo q es el id
+		    	var texto=$(this).siblings('textarea').val();//el elemento tiene un hermano q es textarea(se puede llamar directamente a la etiqeta) tomame el valor
+//desocultamos el gif
+		    	var loading = document.getElementById('loading'+articulo_id);
+		    	loading.style.display='block';
+////////////////////
+				axios.post('/comentario-aniadir',{responseType:'text',texto,articulo_id}).then(response =>{ // Añadimos el comentario por tal ruta q va por post.. responseType:'text' q va tener una respuesta typo texto
+					$('#success-enviar-comentario'+articulo_id).show('slow');//cojo el div con tal id y lo mostramos va ser unico porqe acordate q esta en un bucle ese div
+					$('#error-enviar-comentario'+articulo_id).hide('slow');//escondo este div q me muestra q un mensaje de error
+					$('#caja-comentario'+articulo_id).hide('slow');//escondo la caja de comentario
+                }).catch(error => {
+                	$('#error-enviar-comentario'+articulo_id).show('slow');//muestro el div de mensaje de todo mal
+                	$('#success-enviar-comentario'+articulo_id).hide('slow');//escondo el div de mensaje de todo bien
+                }).then(function() {//ocultamos de nuevo el gif
+				    loading.style.display = 'none';
+				});
+
+                // Una vez metido el comentario, refrescamos todos los comentarios
+                var comentariosMostrar = document.getElementById('comentarios'+articulo_id);//cojemos ese div
+                axios.get('/comentarios-mostrar/' + articulo_id,{responseType:'text'}).then(response => {//recogemos los comentarios de la base de datos
+		        	comentariosMostrar.innerHTML = response.data;
+			    }).catch(error => {
+			        console.log(error);
+			    });
+		    });
+		});
+		// Contador caracteres cogido de internet
+		var inputs = "input[maxlength], textarea[maxlength]";
+	    $(document).on('keyup', "[maxlength]", function (e) {
+        var este = $(this),
+            maxlength = este.attr('maxlength'),
+            maxlengthint = parseInt(maxlength),
+            textoActual = este.val(),
+            currentCharacters = este.val().length;
+            remainingCharacters = maxlengthint - currentCharacters,
+            espan = este.prev('label').find('span');
+            if (document.addEventListener && !window.requestAnimationFrame) {
+                if (remainingCharacters <= -1) {
+                    remainingCharacters = 0;
+                }
+            }
+            espan.html(remainingCharacters);
+        });
+	</script>
+@endsection
+
+
+
+{{-------------------------------------------}}
 
 @include('includes.login-modal')
 @endsection
