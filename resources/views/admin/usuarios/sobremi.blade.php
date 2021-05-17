@@ -20,14 +20,13 @@ En 2020 comencé con este blog, el blog surge de mi propia curiosidad, siempre q
 
 Básicamente este blog es mi bloc de notas online y el lugar donde está todo lo que fui aprendiendo y haciendo.
 La idea es hacer constantes aportes para que no solo me sirva a mi sino a cualquiera que este interesado en aprender,
-ya que el fin aparte de mostrar lo que voy haciendo es aportar.<br><br>
+actualmente tambien lo estoy usando como portafolio.<br><br>
 <h3>La formación online</h3>
 Mi idea es aprender cada vez mas para luego impartir mis conocimientos desde este blog y en la famosa plataforma Udemy.
 
         Me encanta programar y todo lo relacionado con internet y las nuevas tecnologias crear cosas enseñar a los demas y aprender de los demas constantemente.
 He aprendido un monton desde intenet de forma autodidacta y mi idea es compartirlo con los demas.<br><br>
-<h3>Profesión</h3>
-actualmente soy un desarrollador web freelance <br><br>
+
        <h3>Los estudios</h3>
 Odiaba estudiar cosas que me parecían inútiles, esa es la sensación que llevaba arrastrando años atrás, pese a ello siempre fui un buen alumno, el típico de 7.
 
