@@ -33,10 +33,7 @@ Odiaba estudiar cosas que me parecían inútiles, esa es la sensación que lleva
 Estaba estudiando Comercial, me parecía aburrido, solamente tenía la motivación de acabarlo rápido .
 
 Cuando acabé estudié un año para administracion de empresas y lo dejé, no tenia idea que hacer hasta que un dia me harte de llevar la pc al tecnico y decidi aprender reparacion de pc,
-y luego de terminar el curso descubrí mi pasion por la informatica ,luego entre a un ciclo formativo decidiendome por ser analista de sistemas. Fue una buena decisión. A partir de aquí no e podido parar de aprender informatica.
-
-
-       Luego de terminar mi formacion e estado aprendiedo constantemente de forma autodidacta para desempeñarme en el desarrollo web.
+y luego de terminar el curso descubrí mi pasion por la informatica ,luego entre a un ciclo formativo decidiendome por ser analista de sistemas. Fue una buena decisión, a partir de aquí no he podido dejar de aprender de forma autodidacta desempeñandome en el desarrollo web.
         </div>
     </div>
 </div>
