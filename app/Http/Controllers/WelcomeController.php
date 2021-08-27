@@ -17,7 +17,7 @@ class WelcomeController extends Controller
       //Y LA MAGIA DE eloquent
       //$temasTodos=Theme::all();//ACA UTILIZA EL MODELO
       //return dd($temasTodos);//esto es como un var_dump
-      $temasDestacados=Theme::where('destacado',1)->with(['articles.images'])->orderby('id','desc')->get();//con Theme::where('destacado',1) preguntamos los temas q tengan destacado en 1 Y articles.images seria llamo a los articulos y tambien llamo a images no hace falta () auqe va tambien con los parentesis TODO GRACIAS A OMR ELOQUENT :)
+      $temasDestacados=Theme::where('destacado',1)->with(['articles.images'])->orderby('id','asc')->get();//con Theme::where('destacado',1) preguntamos los temas q tengan destacado en 1 Y articles.images seria llamo a los articulos y tambien llamo a images no hace falta () auqe va tambien con los parentesis TODO GRACIAS A OMR ELOQUENT :)
 
       //$temasDestacados=Theme::where('destacado',1)->orderby('id','desc')->get();//con Theme::where('destacado',1) preguntamos los temas q tengan destacado en 1
       $imagenes=SliderImage::all();//para tener todo de las imagenes de los slider
