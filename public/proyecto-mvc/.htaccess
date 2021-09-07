@@ -3,7 +3,7 @@
 <IfModule mod_rewrite.c>
 # Activar rewrite
 RewriteEngine on
-ErrorDocument 404 http://www.adrianweb.live/proyecto-mvc/error/index
+ErrorDocument 404 http://http://104.236.127.72/proyecto-mvc/error/index
 
 # no voy a poder escribir un fichero cualquiera solo url
 
