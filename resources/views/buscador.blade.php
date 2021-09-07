@@ -25,7 +25,7 @@
                         <div class="news__image">
 
                               {{-- <img class="news__img" alt="" src="{{url('http://www.adrianweb.live/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} "> --}}
-                                   <img class="news__img" alt="" src="{{url('http://www.adrianweb.live/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
+                                   <img class="news__img" alt="" src="{{url('http://104.236.127.72/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
                            {{--  <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/app/public/imagenesArticulos/'.$articulo->images()->first()->nombre) }}">  --}}
                         </div>
                         <div class="news__inner">
@@ -64,7 +64,7 @@
                                <div class="news__image">
                                     @foreach($articulo->images as $imagen)  {{-- metodo images viene del modelo Article gracias al omr --}}
                                        {{-- <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}"> --}}
-                                        <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
+                                        <img class="news__img" alt="" src="{{ url('http://104.236.127.72/storage/imagenesArticulos/'.$imagen->nombre) }}">
                                     @endforeach
                                 </div>
                                @endif
@@ -111,7 +111,7 @@
                             <div class="news__image">
 
                                   {{-- <img class="news__img" alt="" src="{{url('http://www.adrianweb.live/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} "> --}}
-                                  <img class="news__img" alt="" src="{{url('http://www.adrianweb.live/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
+                                  <img class="news__img" alt="" src="{{url('http://104.236.127.72/storage/imagenesArticulos/'. $articulo->imagenDestacada()) }} ">
                                {{--  <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->images()->first()->nombre) }}">  --}}
                             </div>
                             <div class="news__inner">
@@ -150,7 +150,7 @@
                                    <div class="news__image">
                                         @foreach($articulo->images as $imagen)  {{-- metodo images viene del modelo Article gracias al omr --}}
                                            {{-- <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}"> --}}
-                                            <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
+                                            <img class="news__img" alt="" src="{{ url('http://104.236.127.72/storage/imagenesArticulos/'.$imagen->nombre) }}">
                                         @endforeach
                                     </div>
                                    @endif

@@ -6,7 +6,7 @@
 	    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
 	    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	    	@foreach($articulo->images as $imagen)
-                <img width="230px" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
+                <img width="230px" src="{{ url('http://104.236.127.72/storage/imagenesArticulos/'.$imagen->nombre) }}">
 
 	    	@endforeach
 	    </div>

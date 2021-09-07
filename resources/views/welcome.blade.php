@@ -14,7 +14,7 @@
             <ul>
                 @foreach($imagenes->sortBy('orden') as $imagen)
                 <li>
-                    <img src="{{ url('http://www.adrianweb.live/storage/imagenesSlider/'.$imagen->nombre) }}">
+                    <img src="{{ url('http://104.236.127.72/storage/imagenesSlider/'.$imagen->nombre) }}">
                 </li>
             @endforeach
 
@@ -63,7 +63,7 @@
                             <div class="jsNewsCard news__card" modal-id="#{{ $articulo->id }}">
                                 <div class="news__image">
 
-                                    <img class="news__img" alt="" src="{{ url('http://www.adrianweb.live/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">
+                                    <img class="news__img" alt="" src="{{ url('http://104.236.127.72/storage/imagenesArticulos/'.$articulo->imagenDestacada()) }}">
                                 </div>
                                 <div class="news__inner">
                                     <h5 class="mbr-section-title display-6">{{ $articulo->titulo }}</h5>
@@ -89,7 +89,7 @@
                                 @if($articulo->images->first())
                                     <div class="news__image">
                                         @foreach($articulo->images as $imagen)
-                                            <img class="news__img" alt="" src="{{  url('http://www.adrianweb.live/storage/imagenesArticulos/'.$imagen->nombre) }}">
+                                            <img class="news__img" alt="" src="{{  url('http://104.236.127.72/storage/imagenesArticulos/'.$imagen->nombre) }}">
                                         @endforeach
                                     </div>
                                 @endif
