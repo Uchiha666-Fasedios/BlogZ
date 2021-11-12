@@ -9,6 +9,7 @@ return array(
     'App\\Article' => $baseDir . '/app/Article.php',
     'App\\ArticleImage' => $baseDir . '/app/ArticleImage.php',
     'App\\Commentary' => $baseDir . '/app/Commentary.php',
+    'App\\Console\\Commands\\GenerateSitemap' => $baseDir . '/app/Console/Commands/GenerateSitemap.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
