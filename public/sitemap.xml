@@ -1,2460 +1,309 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>http://adrianweb.live</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/matrix1.jpg</image:loc>
-      <image:title>title 1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/matrix2.jpg</image:loc>
-      <image:title>title 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/matrix3.jpg</image:loc>
-      <image:title>title 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/tooltip3.jpg</image:loc>
-      <image:title>slide1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/tooltip2.jpg</image:loc>
-      <image:title>slide1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/tooltip1.jpg</image:loc>
-      <image:title>slide1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/MF48p9CLfKqJs72itsKF7KftGADjQuH9VnjpX5wa.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/egFPWagxDEByqTXY8jJ0ws50bmAJmmNuiB1FD7YQ.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/LN22Z20eE1GIBawvcVPv7Vm4WRaKQTNBPoxa2Ksw.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/YMhj2I9dUfbTKvOytiDTMXQ4N8HH9UzvLksdir0u.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/NtMAHiQ5eMRelHbhu5RVnMKfn4WYF6WRldWYqQLP.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/HA7tVKbaEOFh4SXn8JHRh60vRqXer9Lb8fpv8tXR.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gTzixGCVq6SkXxKDtt4r7W7MnMYvb7ARZu0oIyeb.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/LvNwVTn9eEJ0M5bgEADXQPa0itQuMMQEktp6JRMA.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/Jo8mbH6RfORXS2wAH73OPqUowHjGHW7V8FbJhVbK.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/qbcJ4Aaowe721r1Veng9BCj7gUvhIiHYSRykNcpa.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/h4LVeml8dQ1mU4wGtCEP5DLdCuKt1xuwWkizm1i1.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/5MpvIQje6E4RuirUwM7HmLtq0Rl3Kq8829vEC8u8.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/i0gYKOzIa8t2srdNqBJjLOuM0CuoWgPJl7N0p13p.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/QF6rF93zuwYHadJvh35FsBlUbKb7DhwJsDvgi5ss.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/iWH6gdzBiELNIOrYsdlOWYVtYATkT9dMVbUNLSRe.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/nuDkfoj4CtZwQ4t6DkOqJ15a8SUwVS5KTSd42tof.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gf1ZJnXFWqcck4wXRAEHQktRzQYU0qKbKpKsFrMm.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/4.11.2/full/plugins/smiley/images/omg_smile.png</image:loc>
-      <image:title>surprise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/xGNFwGHZuDx1nIZY7EZiEfT5XJn3RFu4KOimrJ15.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/slKch8nsWqoxC28H0sno9gvlFaNNtVzKG9NA83FM.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/php.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/mysql.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/jquery.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/css2.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-js/index.html</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/hojas.jpg</image:loc>
-      <image:title>Hojas</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/rojo.jpg</image:loc>
-      <image:title>The long and winding road</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/cielo.jpg</image:loc>
-      <image:title>Happy trees</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/caracol.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/password/reset</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/redSocialLaravel/public/login</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/register</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8356af364ce.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f19ea0.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f19a5a.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/clients/client1.png</image:loc>
-      <image:title>client</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/clients/client2.png</image:loc>
-      <image:title>client</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tema/destacado</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/MF48p9CLfKqJs72itsKF7KftGADjQuH9VnjpX5wa.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/egFPWagxDEByqTXY8jJ0ws50bmAJmmNuiB1FD7YQ.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/LN22Z20eE1GIBawvcVPv7Vm4WRaKQTNBPoxa2Ksw.png</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/contacto</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/logos/w.jpg</image:loc>
-      <image:title>WhatsApp</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/logos/in.jpg</image:loc>
-      <image:title>LinkedIn</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/logos/f.jpg</image:loc>
-      <image:title>Facebook</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/logos/i.jpg</image:loc>
-      <image:title>Instagram</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/logos/t.png</image:loc>
-      <image:title>Twitter</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tema/mundo-php</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/i0gYKOzIa8t2srdNqBJjLOuM0CuoWgPJl7N0p13p.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/QF6rF93zuwYHadJvh35FsBlUbKb7DhwJsDvgi5ss.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/iWH6gdzBiELNIOrYsdlOWYVtYATkT9dMVbUNLSRe.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/lWv9iEXYZ7fX0piRUUkTQi2CLCJlQMYBn7ksXETf.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gEgJitPWPDEIKmmtqNe39POH9sOatcYeiO9dLAlI.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/8p0ZRjYxRSx6I7CP5QbQ6CZbEi6FcnncRplbQDuh.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/nuDkfoj4CtZwQ4t6DkOqJ15a8SUwVS5KTSd42tof.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gf1ZJnXFWqcck4wXRAEHQktRzQYU0qKbKpKsFrMm.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/4.11.2/full/plugins/smiley/images/omg_smile.png</image:loc>
-      <image:title>surprise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/xGNFwGHZuDx1nIZY7EZiEfT5XJn3RFu4KOimrJ15.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/slKch8nsWqoxC28H0sno9gvlFaNNtVzKG9NA83FM.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/qs4g7KHWn6YiTLGamcVGj1wofINBo1WgrnrH7FB2.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/QDJNLgwDAo6AR5F0m5dY9BxF1Mdw9KkZsn0YcIsN.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/BCGzBNVJOjoNsDstPrEmuuE30gkYzfWhVLffhO3l.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/zKf3Hy2gWLpn8TLH2rnAWUgPiNdWbmhb7ABql7rj.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/Tv37bj7e4IUg4F2y6LWMp44nd3VB70gmXU97XV4L.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/5WVprUsAGJFtemKPDxoBduiR6jZarHq1RiMcJjy5.png</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/RedSocial-ABM/public/login</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tema/desarrollos</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/YMhj2I9dUfbTKvOytiDTMXQ4N8HH9UzvLksdir0u.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/NtMAHiQ5eMRelHbhu5RVnMKfn4WYF6WRldWYqQLP.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/HA7tVKbaEOFh4SXn8JHRh60vRqXer9Lb8fpv8tXR.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gTzixGCVq6SkXxKDtt4r7W7MnMYvb7ARZu0oIyeb.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/LvNwVTn9eEJ0M5bgEADXQPa0itQuMMQEktp6JRMA.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/Jo8mbH6RfORXS2wAH73OPqUowHjGHW7V8FbJhVbK.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/qbcJ4Aaowe721r1Veng9BCj7gUvhIiHYSRykNcpa.png</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/sobremi</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tema/mundo-javascrip</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/h4LVeml8dQ1mU4wGtCEP5DLdCuKt1xuwWkizm1i1.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/5MpvIQje6E4RuirUwM7HmLtq0Rl3Kq8829vEC8u8.png</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/matrix1.jpg</image:loc>
-      <image:title>title 1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/matrix2.jpg</image:loc>
-      <image:title>title 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/matrix3.jpg</image:loc>
-      <image:title>title 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/tooltip3.jpg</image:loc>
-      <image:title>slide1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/tooltip2.jpg</image:loc>
-      <image:title>slide1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/tooltip1.jpg</image:loc>
-      <image:title>slide1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/MF48p9CLfKqJs72itsKF7KftGADjQuH9VnjpX5wa.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/egFPWagxDEByqTXY8jJ0ws50bmAJmmNuiB1FD7YQ.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/LN22Z20eE1GIBawvcVPv7Vm4WRaKQTNBPoxa2Ksw.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/YMhj2I9dUfbTKvOytiDTMXQ4N8HH9UzvLksdir0u.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/NtMAHiQ5eMRelHbhu5RVnMKfn4WYF6WRldWYqQLP.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/HA7tVKbaEOFh4SXn8JHRh60vRqXer9Lb8fpv8tXR.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gTzixGCVq6SkXxKDtt4r7W7MnMYvb7ARZu0oIyeb.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/LvNwVTn9eEJ0M5bgEADXQPa0itQuMMQEktp6JRMA.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/Jo8mbH6RfORXS2wAH73OPqUowHjGHW7V8FbJhVbK.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/qbcJ4Aaowe721r1Veng9BCj7gUvhIiHYSRykNcpa.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/h4LVeml8dQ1mU4wGtCEP5DLdCuKt1xuwWkizm1i1.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/5MpvIQje6E4RuirUwM7HmLtq0Rl3Kq8829vEC8u8.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/i0gYKOzIa8t2srdNqBJjLOuM0CuoWgPJl7N0p13p.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/QF6rF93zuwYHadJvh35FsBlUbKb7DhwJsDvgi5ss.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/iWH6gdzBiELNIOrYsdlOWYVtYATkT9dMVbUNLSRe.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/nuDkfoj4CtZwQ4t6DkOqJ15a8SUwVS5KTSd42tof.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gf1ZJnXFWqcck4wXRAEHQktRzQYU0qKbKpKsFrMm.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/4.11.2/full/plugins/smiley/images/omg_smile.png</image:loc>
-      <image:title>surprise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/xGNFwGHZuDx1nIZY7EZiEfT5XJn3RFu4KOimrJ15.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/slKch8nsWqoxC28H0sno9gvlFaNNtVzKG9NA83FM.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/php.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/mysql.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/jquery.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/css2.jpg</image:loc>
-      <image:title>php</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-js/contact.html</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/caracol.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-js/about.html</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/caracol.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-js/reloj.html</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-js/img/caracol.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/redSocialLaravel/public/register</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-symfony/public/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/lo-mas-vendido</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dd7fd2fef.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8356af364ce.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/redSocialLaravel/public/password/reset</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/blitzwolf_bw_es4_dual_dynamic</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8351439871b.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83514398dfa.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83514399318.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83514399bac.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_redmi_airdots_tws_bluetooth</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dfe192878.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dfe192f39.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dfe193462.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dfe193bd8.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/oaupload/banggood/images/6E/9B/ad329491-5e6d-48f3-9bab-9a2090cb7c77.jpg</image:loc>
-      <image:title>Xiaomi Redmi Airdots TWS bluetooth 5.0 Earphone DSP Noise Cancelling Auto Pairing Bilateral Call Stereo Headphone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/blitzwolf_bw_hp0_wireless</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82df211f06e.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82df211faad.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82df212034a.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82df21208d8.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/televisor_samsung_49_4k_uhd</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8354c277eb8.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8354c2784e1.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8354c2789c8.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_gaming_laptop_156</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835243dfd39.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835243e03f7.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835243e0a8c.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835243e14ea.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_redmi_note_8_global_version_63_inch_4</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5eab86b2a2c48.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5eab86b2aaf4b.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/televisores</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e73cd286742d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/tv_xiaomi_48_nuevo_editado</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e855b86806de.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e855b8680fdc.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e855b86843a9.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e855bff1dfc7.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/batido_saludable_sabor_cookies</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8356af38b12.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8356af39080.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8356af399d0.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8356af3a274.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/5e8549c5bd8c8541411073.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/5e8549c5df6481953218584.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/5e8549c5dfaa21584607304.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dd7fd2fef.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/ropa masculina</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/campera_de_piel</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/otono_e_invierno_moda_simple_hembra_collares</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83575a0fbc7.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83575a10181.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83575a106d0.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83575a10f25.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/audio</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82db79eb515.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/salud</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8356af364ce.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/acer_gaming_predator_helios</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8353e10c7b9.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8353e1170bd.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8353e117d9a.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8353e118760.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/computadoras</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/campera_de_cuero</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8356af364ce.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e73cd286742d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/smartphones</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dd7fd2fef.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82db79eb515.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e73cd286742d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/contacto</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/RedSocial-ABM/public/register</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos/categoria/ropa femenina</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/index.php</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/61LvTOzGpGL._UX569_.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/haz-negocio-ropa-dama-jeans-strech-precio-de-mayoreo-D_NQ_NP_197425-MLM25450626009_032017-F.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/b7fa74df19ebd32b3b9e3fd3e7eb21fd.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/lady-lisa.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/2017-ej-rcito-verde-chaqueta-de-invierno.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/sesion</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-symfony/public/login</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tema/mundo-php?page=2</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/XcFpG0lA4l1dYaWrvPyraqno6QsCGTTjog5gtAoL.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/FHQowWJZlCWghR0RRo1sRc9OP1JzynzdWGqrTG5d.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/XaWM5ksMv3pFJALcBG7lghKjG1lmv4wPZgj4rsPs.png</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-symfony/public/registro</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/huawei_nova_6_se_cn_version_64_pulgadas_48mp</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e727c508e854.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e727c508f0dd.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/oaupload/banggood/images/6E/9B/ad329491-5e6d-48f3-9bab-9a2090cb7c77.jpg</image:loc>
-      <image:title>Xiaomi Redmi Airdots TWS bluetooth 5.0 Earphone DSP Noise Cancelling Auto Pairing Bilateral Call Stereo Headphone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/blitzwolf_bw_pcm1_116_inch_fhd_1080p</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835310552aa.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e83531055e09.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e8353105645d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835310569fc.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8356af364ce.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_redmi_note_8_global_version_63_inch_48mp</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e7fc0f10fc73.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e7fc0f110479.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e7fc0f110a1a.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/oaupload/banggood/images/6E/9B/ad329491-5e6d-48f3-9bab-9a2090cb7c77.jpg</image:loc>
-      <image:title>Xiaomi Redmi Airdots TWS bluetooth 5.0 Earphone DSP Noise Cancelling Auto Pairing Bilateral Call Stereo Headphone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/10.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/20.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/30.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/5e82be730203c783769895.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/5e82be7318ed21071615534.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/resenas/5e82be73191e22108044832.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e73cd286742d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/caterpillar_zapatos_de_seguridad_passage</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835595c50d3.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835595c5766.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835595c5cb9.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e835595c6371.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_mi_note_10_global_version_647_pulgadas</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e73cd28c138b.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e73cd28c6155.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e73cd28c816c.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/images/oaupload/banggood/images/6E/9B/ad329491-5e6d-48f3-9bab-9a2090cb7c77.jpg</image:loc>
-      <image:title>Xiaomi Redmi Airdots TWS bluetooth 5.0 Earphone DSP Noise Cancelling Auto Pairing Bilateral Call Stereo Headphone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/ulefone_armor_6e_nfc_ip68</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dd7ff1427.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dd800dd5c.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dd80116d1.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82dd80168ba.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos?page=2</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dd7fd2fef.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82db79eb515.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e73cd286742d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/entrada.php?id=1</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_mi9t_mi_9t_global_version_639</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82de203905d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82de203981f.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82de2039e8b.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82de203a662.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/entrada.php?id=3</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/producto/xiaomi_mi_a3_global_version_6088</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82db7a04896.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82db7a0b4ba.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82db7a0e063.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/soporte_img/5e82db7a12a8d.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/logo-black.png</image:loc>
-      <image:title>brand name</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f1a18e.jpeg</image:loc>
-      <image:title>Banner Desc</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/entradas.php</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/categoria.php?id=1</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/entrada.php?id=2</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Producto/ver&amp;id=6</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/2017-ej-rcito-verde-chaqueta-de-invierno.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-php/categoria.php?id=2</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Producto/ver&amp;id=9</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/lady-lisa.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Producto/ver&amp;id=4</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/b7fa74df19ebd32b3b9e3fd3e7eb21fd.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Carrito/index</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Producto/ver&amp;id=5</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/haz-negocio-ropa-dama-jeans-strech-precio-de-mayoreo-D_NQ_NP_197425-MLM25450626009_032017-F.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Producto/ver&amp;id=1</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Producto/ver&amp;id=2</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/61LvTOzGpGL._UX569_.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Usuario/registro</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Categoria/ver&amp;id=1</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Carrito/index</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Categoria/ver&amp;id=2</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/haz-negocio-ropa-dama-jeans-strech-precio-de-mayoreo-D_NQ_NP_197425-MLM25450626009_032017-F.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/b7fa74df19ebd32b3b9e3fd3e7eb21fd.jpg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/61LvTOzGpGL._UX569_.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Categoria/ver&amp;id=4</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Categoria/ver&amp;id=3</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/2017-ej-rcito-verde-chaqueta-de-invierno.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Categoria/ver&amp;id=5</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/uploads/images/lady-lisa.jpg</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tema/mundo-php?page=1</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/assets/images/img-laravel-128x128.png</image:loc>
-      <image:title>Mobirise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/i0gYKOzIa8t2srdNqBJjLOuM0CuoWgPJl7N0p13p.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/QF6rF93zuwYHadJvh35FsBlUbKb7DhwJsDvgi5ss.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/iWH6gdzBiELNIOrYsdlOWYVtYATkT9dMVbUNLSRe.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/lWv9iEXYZ7fX0piRUUkTQi2CLCJlQMYBn7ksXETf.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gEgJitPWPDEIKmmtqNe39POH9sOatcYeiO9dLAlI.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/8p0ZRjYxRSx6I7CP5QbQ6CZbEi6FcnncRplbQDuh.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/nuDkfoj4CtZwQ4t6DkOqJ15a8SUwVS5KTSd42tof.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/gf1ZJnXFWqcck4wXRAEHQktRzQYU0qKbKpKsFrMm.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/4.11.2/full/plugins/smiley/images/omg_smile.png</image:loc>
-      <image:title>surprise</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/xGNFwGHZuDx1nIZY7EZiEfT5XJn3RFu4KOimrJ15.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/slKch8nsWqoxC28H0sno9gvlFaNNtVzKG9NA83FM.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/qs4g7KHWn6YiTLGamcVGj1wofINBo1WgrnrH7FB2.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/QDJNLgwDAo6AR5F0m5dY9BxF1Mdw9KkZsn0YcIsN.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/BCGzBNVJOjoNsDstPrEmuuE30gkYzfWhVLffhO3l.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/zKf3Hy2gWLpn8TLH2rnAWUgPiNdWbmhb7ABql7rj.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/Tv37bj7e4IUg4F2y6LWMp44nd3VB70gmXU97XV4L.png</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/storage/imagenesArticulos/5WVprUsAGJFtemKPDxoBduiR6jZarHq1RiMcJjy5.png</image:loc>
-      <image:caption />
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/proyecto-mvc/Categoria/ver&amp;id=6</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/proyecto-mvc/assets/img/camiseta.png</image:loc>
-      <image:title>Camiseta logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>http://adrianweb.live/tiendaABM/public/productos?page=1</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/config/5e83fb9f0498d.png</image:loc>
-      <image:title>devctheme Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cd44dfae.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5fb31cbec55a4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e855b8672dc4.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83575a0cd8c.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8356af364ce.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835595c2420.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8354c274e83.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e8353e109b24.jpeg</image:loc>
-      <image:title>banner</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83531044682.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e835243dd061.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e83514385f83.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82dfe1835b0.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82df211c4be.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/poster/5e82de2036223.jpeg</image:loc>
-      <image:caption />
-    </image:image>
-    <image:image>
-      <image:loc>http://adrianweb.live/tiendaABM/public/assets/images/payments.png</image:loc>
-      <image:title>payment methods</image:title>
-    </image:image>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://adrianweb.site</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/</loc>
+        <lastmod>2021-11-11T23:06:13-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/RedSocial-ABM/public</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/contacto</loc>
+        <lastmod>2021-11-11T23:06:16-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/password/reset</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-js/about.html</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-js/contact.html</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-js/index.html</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-js/reloj.html</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Carrito/add&amp;id=1</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Carrito/add&amp;id=2</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Carrito/add&amp;id=4</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Carrito/add&amp;id=5</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Carrito/add&amp;id=6</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Carrito/index</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Categoria/ver&amp;id=1</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Categoria/ver&amp;id=2</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Categoria/ver&amp;id=3</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Categoria/ver&amp;id=4</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Categoria/ver&amp;id=5</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Categoria/ver&amp;id=7</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Producto/ver&amp;id=1</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Producto/ver&amp;id=2</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Producto/ver&amp;id=4</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Producto/ver&amp;id=5</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Producto/ver&amp;id=6</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-mvc/Usuario/registro</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/categoria.php?id=1</loc>
+        <lastmod>2021-11-11T23:06:18-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/categoria.php?id=2</loc>
+        <lastmod>2021-11-11T23:06:18-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/entrada.php?id=1</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/entrada.php?id=2</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/entrada.php?id=3</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/entradas.php</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-php/index.php</loc>
+        <lastmod>2021-11-11T23:06:18-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/proyecto-symfony/public</loc>
+        <lastmod>2021-11-11T23:06:16-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/redSocialLaravel/public</loc>
+        <lastmod>2021-11-11T23:06:16-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/redSocialLaravel/public/</loc>
+        <lastmod>2021-11-11T23:06:18-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/redSocialLaravel/public/login</loc>
+        <lastmod>2021-11-11T23:06:19-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/redSocialLaravel/public/password/reset</loc>
+        <lastmod>2021-11-11T23:06:20-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/redSocialLaravel/public/register</loc>
+        <lastmod>2021-11-11T23:06:20-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/register</loc>
+        <lastmod>2021-11-11T23:06:16-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/sobremi</loc>
+        <lastmod>2021-11-11T23:06:16-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/tema/angular2</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/tema/javascript-y-aportes2</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/tema/laraveles</loc>
+        <lastmod>2021-11-11T23:06:16-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/tema/php2</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://adrianweb.site/tema/symfony2</loc>
+        <lastmod>2021-11-11T23:06:17-03:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
-<!--<guid value="0770d7b1-95ba-4307-80d9-ab44eb4b9e46" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.2",
         "laraveles/spanish": "^1.5",
+        "spatie/laravel-sitemap": "^5.8",
         "yajra/laravel-datatables-oracle": "^9.18"
     },
     "require-dev": {

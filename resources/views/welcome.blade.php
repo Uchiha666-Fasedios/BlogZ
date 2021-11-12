@@ -259,7 +259,7 @@
                                 <h4 class="panel-title display-6"><a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion1-3-init" data-core="" href="#collapseOneaccordion1-3" aria-expanded="false" aria-controls="collapseOne"><span class="sign"></span>Que otros proyectos se esperan?</a></h4>
                             </div>
                             <div id="collapseOneaccordion1-3" class="panel-collapse noScroll collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body lead"><p>Pronto se podra ver proyectos con Symfony.. Un gestor de tareas y Una aplicación de vídeos favoritos.Tambien se van a agregar proyectos con Python</p></div>
+                                <div class="panel-body lead"><p>Pronto se crearan mas api-rest-full.. Una tienda online con Angular-Laravel.Tambien se va a crear un proyecto de cursos online</p></div>
                             </div>
                         </div>
                         <div class="panel panel-default" style="display: block;">
