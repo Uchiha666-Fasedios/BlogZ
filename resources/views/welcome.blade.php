@@ -265,7 +265,7 @@
                         <div class="panel panel-default" style="display: block;">
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <span class="signSpan pseudoPlus"></span>
-                                <h4 class="panel-title display-6"><a role="button" class="" data-toggle="collapse" data-parent="#accordion1-3-init" data-core="" href="#collapseTwoaccordion1-3" aria-expanded="true" aria-controls="collapseTwo">Va a haber videos?</a></h4>
+                                <h4 class="panel-title display-6"><a role="button" class="" data-toggle="collapse" data-parent="#accordion1-3-init" data-core="" href="#collapseTwoaccordion1-3" aria-expanded="true" aria-controls="collapseTwo">Se veran videos?</a></h4>
                             </div>
                             <div id="collapseTwoaccordion1-3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body lead"><p>Muy pronto los aportes seran detallados en videos junto con algunos proyectos explicando el codigo paso a paso.  </p></div>
